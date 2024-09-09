@@ -1,0 +1,1001 @@
+{
+    "ABILITY_DETAIL_0": {
+      "_Id": "ABILITY_DETAIL_0",
+      "_Text": ""
+    },
+    "ABILITY_DETAIL_5": {
+      "_Id": "ABILITY_DETAIL_5",
+      "_Text": "If the user is attuned to Flame: \\nresists afflictions once per quest."
+    },
+    "ABILITY_DETAIL_6": {
+      "_Id": "ABILITY_DETAIL_6",
+      "_Text": "If the user is attuned to Flame: \\nresists afflictions up to three times per quest."
+    },
+    "ABILITY_DETAIL_7": {
+      "_Id": "ABILITY_DETAIL_7",
+      "_Text": "Adds 6% to the modifier applied to damage\\nwhen in dragon form."
+    },
+    "ABILITY_DETAIL_8": {
+      "_Id": "ABILITY_DETAIL_8",
+      "_Text": "Adds 10% to the modifier applied to damage\\nwhen in dragon form."
+    },
+    "ABILITY_DETAIL_9": {
+      "_Id": "ABILITY_DETAIL_9",
+      "_Text": "Grants the user\u0027s force strikes a 50% chance to\\nreduce enemy strength by 3% for 10 seconds."
+    },
+    "ABILITY_DETAIL_10": {
+      "_Id": "ABILITY_DETAIL_10",
+      "_Text": "Grants the user\u0027s force strikes a 70% chance to\\nreduce enemy strength by 3% for 10 seconds."
+    },
+    "ABILITY_DETAIL_15": {
+      "_Id": "ABILITY_DETAIL_15",
+      "_Text": "If the user is attuned to {element_owner}: \\nfills 50% of skill gauges at the start of quests."
+    },
+    "ABILITY_DETAIL_16": {
+      "_Id": "ABILITY_DETAIL_16",
+      "_Text": "Increases player EXP intake for clearing quests\\nby 10%. This ability does not stack with other\\nsimilar abilities; the highest value will be applied."
+    },
+    "ABILITY_DETAIL_17": {
+      "_Id": "ABILITY_DETAIL_17",
+      "_Text": "Increases damage to burning enemies by 25%."
+    },
+    "ABILITY_DETAIL_18": {
+      "_Id": "ABILITY_DETAIL_18",
+      "_Text": "If the user is attuned to Flame: \\nincreases skill gauge fill rate by 8%."
+    },
+    "ABILITY_DETAIL_19": {
+      "_Id": "ABILITY_DETAIL_19",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 35%, and adds 15%\\nto wind resistance."
+    },
+    "ABILITY_DETAIL_20": {
+      "_Id": "ABILITY_DETAIL_20",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 50%, and adds 15%\\nto wind resistance."
+    },
+    "ABILITY_DETAIL_21": {
+      "_Id": "ABILITY_DETAIL_21",
+      "_Text": "Increases strength by 20% when electrified."
+    },
+    "ABILITY_DETAIL_22": {
+      "_Id": "ABILITY_DETAIL_22",
+      "_Text": "Increases strength by 25% when electrified."
+    },
+    "ABILITY_DETAIL_23": {
+      "_Id": "ABILITY_DETAIL_23",
+      "_Text": "If the user wields a Sword:\\nincreases attack skill damage by 30%."
+    },
+    "ABILITY_DETAIL_24": {
+      "_Id": "ABILITY_DETAIL_24",
+      "_Text": "If the user wields a Sword:\\nincreases attack skill damage by 35%."
+    },
+    "ABILITY_DETAIL_25": {
+      "_Id": "ABILITY_DETAIL_25",
+      "_Text": "If the user is attuned to Light: \\nresists afflictions once per quest."
+    },
+    "ABILITY_DETAIL_26": {
+      "_Id": "ABILITY_DETAIL_26",
+      "_Text": "If the user is attuned to Light: \\nresists afflictions up to three times per quest."
+    },
+    "ABILITY_DETAIL_27": {
+      "_Id": "ABILITY_DETAIL_27",
+      "_Text": "If the user is attuned to Shadow:\\nincreases skill gauge fill rate by 4%."
+    },
+    "ABILITY_DETAIL_28": {
+      "_Id": "ABILITY_DETAIL_28",
+      "_Text": "If the user is attuned to Shadow:\\nincreases skill gauge fill rate by 5%."
+    },
+    "ABILITY_DETAIL_30": {
+      "_Id": "ABILITY_DETAIL_30",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 3% for every five enemies\\ndefeated (up to five times per quest)."
+    },
+    "ABILITY_DETAIL_31": {
+      "_Id": "ABILITY_DETAIL_31",
+      "_Text": "Increases forbidden knowledge intake\\nfor clearing quests by 25%."
+    },
+    "ABILITY_DETAIL_32": {
+      "_Id": "ABILITY_DETAIL_32",
+      "_Text": "Increases forbidden knowledge intake\\nfor clearing quests by 50%."
+    },
+    "ABILITY_DETAIL_33": {
+      "_Id": "ABILITY_DETAIL_33",
+      "_Text": "Increases forbidden knowledge intake\\nfor clearing quests by 100%."
+    },
+    "ABILITY_DETAIL_34": {
+      "_Id": "ABILITY_DETAIL_34",
+      "_Text": "Increases forbidden knowledge intake\\nfor clearing quests by 150%."
+    },
+    "ABILITY_DETAIL_35": {
+      "_Id": "ABILITY_DETAIL_35",
+      "_Text": "Increases arcane tome intake for clearing quests\\nby 25%."
+    },
+    "ABILITY_DETAIL_36": {
+      "_Id": "ABILITY_DETAIL_36",
+      "_Text": "Increases arcane tome intake for clearing quests\\nby 50%."
+    },
+    "ABILITY_DETAIL_37": {
+      "_Id": "ABILITY_DETAIL_37",
+      "_Text": "Increases arcane tome intake for clearing quests\\nby 75%."
+    },
+    "ABILITY_DETAIL_39": {
+      "_Id": "ABILITY_DETAIL_39",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 35%, and adds 15%\\nto shadow resistance."
+    },
+    "ABILITY_DETAIL_40": {
+      "_Id": "ABILITY_DETAIL_40",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 50%, and adds 15%\\nto shadow resistance."
+    },
+    "ABILITY_DETAIL_41": {
+      "_Id": "ABILITY_DETAIL_41",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 35% when HP is 30% or above."
+    },
+    "ABILITY_DETAIL_42": {
+      "_Id": "ABILITY_DETAIL_42",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 50% when HP is 30% or above."
+    },
+    "ABILITY_DETAIL_46": {
+      "_Id": "ABILITY_DETAIL_46",
+      "_Text": "Decreases damage from undead by 15%."
+    },
+    "ABILITY_DETAIL_47": {
+      "_Id": "ABILITY_DETAIL_47",
+      "_Text": "Increases adventurer EXP intake for clearing quests\\nby 100%."
+    },
+    "ABILITY_DETAIL_48": {
+      "_Id": "ABILITY_DETAIL_48",
+      "_Text": "Increases adventurer EXP intake for clearing quests\\nby 150%."
+    },
+    "ABILITY_DETAIL_49": {
+      "_Id": "ABILITY_DETAIL_49",
+      "_Text": "Increases damage to thaumians by 10%."
+    },
+    "ABILITY_DETAIL_50": {
+      "_Id": "ABILITY_DETAIL_50",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to thaumians by 10%."
+    },
+    "ABILITY_DETAIL_51": {
+      "_Id": "ABILITY_DETAIL_51",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to thaumians by 15%."
+    },
+    "ABILITY_DETAIL_54": {
+      "_Id": "ABILITY_DETAIL_54",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to thaumians by 10%."
+    },
+    "ABILITY_DETAIL_55": {
+      "_Id": "ABILITY_DETAIL_55",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to thaumians by 15%."
+    },
+    "ABILITY_DETAIL_58": {
+      "_Id": "ABILITY_DETAIL_58",
+      "_Text": "Increases damage to physians by 10%."
+    },
+    "ABILITY_DETAIL_59": {
+      "_Id": "ABILITY_DETAIL_59",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to physians by 10%."
+    },
+    "ABILITY_DETAIL_60": {
+      "_Id": "ABILITY_DETAIL_60",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to physians by 15%."
+    },
+    "ABILITY_DETAIL_61": {
+      "_Id": "ABILITY_DETAIL_61",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases defense by 3% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_62": {
+      "_Id": "ABILITY_DETAIL_62",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases defense by 5% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_63": {
+      "_Id": "ABILITY_DETAIL_63",
+      "_Text": "If the user is attuned to {element_owner}: \\nfills 25% of skill gauges at the start of quests."
+    },
+    "ABILITY_DETAIL_64": {
+      "_Id": "ABILITY_DETAIL_64",
+      "_Text": "If the user is attuned to {element_owner}: \\nfills 25% of skill gauges at the start of quests."
+    },
+    "ABILITY_DETAIL_65": {
+      "_Id": "ABILITY_DETAIL_65",
+      "_Text": "If the user is attuned to {element_owner}: \\nfills 50% of skill gauges at the start of quests."
+    },
+    "ABILITY_DETAIL_66": {
+      "_Id": "ABILITY_DETAIL_66",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases skill gauge fill rate by 4%."
+    },
+    "ABILITY_DETAIL_67": {
+      "_Id": "ABILITY_DETAIL_67",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to stunned enemies by 15%."
+    },
+    "ABILITY_DETAIL_68": {
+      "_Id": "ABILITY_DETAIL_68",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases the potency of recovery skills by 5%."
+    },
+    "ABILITY_DETAIL_69": {
+      "_Id": "ABILITY_DETAIL_69",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 4% for every five enemies\\ndefeated (up to five times per quest)."
+    },
+    "ABILITY_DETAIL_72": {
+      "_Id": "ABILITY_DETAIL_72",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 5% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_78": {
+      "_Id": "ABILITY_DETAIL_78",
+      "_Text": "Reduces susceptibility to freeze and bog by 50%."
+    },
+    "ABILITY_DETAIL_79": {
+      "_Id": "ABILITY_DETAIL_79",
+      "_Text": "Reduces susceptibility to freeze and bog by 100%."
+    },
+    "ABILITY_DETAIL_7960": {
+      "_Id": "ABILITY_DETAIL_7960",
+      "_Text": "Reduces susceptibility to freeze and bog\\nby 100%. When Ranzal is hit by an attack\\nthat would have inflicted freeze or bog on him,\\nhis strength is increased by 15% for 10 seconds.\\nThis increase will not stack, and, after activating,\\nthis buff cannot be activated again by the same\\naffliction for 15 seconds."
+    },
+    "ABILITY_DETAIL_84": {
+      "_Id": "ABILITY_DETAIL_84",
+      "_Text": "Increases skill gauge fill rate by 6% when\\nHP is 70% or above."
+    },
+    "ABILITY_DETAIL_85": {
+      "_Id": "ABILITY_DETAIL_85",
+      "_Text": "Increases skill gauge fill rate by 8% when\\nHP is 70% or above."
+    },
+    "ABILITY_DETAIL_86": {
+      "_Id": "ABILITY_DETAIL_86",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to thaumians by 10%."
+    },
+    "ABILITY_DETAIL_87": {
+      "_Id": "ABILITY_DETAIL_87",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to thaumians by 15%."
+    },
+    "ABILITY_DETAIL_88": {
+      "_Id": "ABILITY_DETAIL_88",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to physians by 10%."
+    },
+    "ABILITY_DETAIL_89": {
+      "_Id": "ABILITY_DETAIL_89",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to physians by 15%."
+    },
+    "ABILITY_DETAIL_90": {
+      "_Id": "ABILITY_DETAIL_90",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases defense by 3% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_91": {
+      "_Id": "ABILITY_DETAIL_91",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases defense by 5% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_92": {
+      "_Id": "ABILITY_DETAIL_92",
+      "_Text": "Increases damage to undead by 10%."
+    },
+    "ABILITY_DETAIL_93": {
+      "_Id": "ABILITY_DETAIL_93",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to undead by 10%."
+    },
+    "ABILITY_DETAIL_94": {
+      "_Id": "ABILITY_DETAIL_94",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to undead by 15%."
+    },
+    "ABILITY_DETAIL_95": {
+      "_Id": "ABILITY_DETAIL_95",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to blinded enemies by 10%."
+    },
+    "ABILITY_DETAIL_96": {
+      "_Id": "ABILITY_DETAIL_96",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to blinded enemies by 15%."
+    },
+    "ABILITY_DETAIL_97": {
+      "_Id": "ABILITY_DETAIL_97",
+      "_Text": "If the user is attuned to {element_owner}: \\nfills 25% of skill gauges at the start of quests."
+    },
+    "ABILITY_DETAIL_98": {
+      "_Id": "ABILITY_DETAIL_98",
+      "_Text": "If the user is attuned to {element_owner}: \\nfills 50% of skill gauges at the start of quests."
+    },
+    "ABILITY_DETAIL_101": {
+      "_Id": "ABILITY_DETAIL_101",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases the potency of recovery skills by 8%\\nwhen HP is 70% or above."
+    },
+    "ABILITY_DETAIL_104": {
+      "_Id": "ABILITY_DETAIL_104",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to undead by 10%."
+    },
+    "ABILITY_DETAIL_105": {
+      "_Id": "ABILITY_DETAIL_105",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to undead by 15%."
+    },
+    "ABILITY_DETAIL_106": {
+      "_Id": "ABILITY_DETAIL_106",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to physians by 10%."
+    },
+    "ABILITY_DETAIL_107": {
+      "_Id": "ABILITY_DETAIL_107",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to physians by 15%."
+    },
+    "ABILITY_DETAIL_108": {
+      "_Id": "ABILITY_DETAIL_108",
+      "_Text": "If the user is attuned to {element_owner}: \\ncompletely negates skill resistance."
+    },
+    "ABILITY_DETAIL_110": {
+      "_Id": "ABILITY_DETAIL_110",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 35%."
+    },
+    "ABILITY_DETAIL_111": {
+      "_Id": "ABILITY_DETAIL_111",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by 50%."
+    },
+    "ABILITY_DETAIL_112": {
+      "_Id": "ABILITY_DETAIL_112",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to poisoned enemies by 15%."
+    },
+    "ABILITY_DETAIL_113": {
+      "_Id": "ABILITY_DETAIL_113",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to poisoned enemies by 20%."
+    },
+    "ABILITY_DETAIL_114": {
+      "_Id": "ABILITY_DETAIL_114",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to enemies in overdrive state\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_115": {
+      "_Id": "ABILITY_DETAIL_115",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to enemies in overdrive state\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_116": {
+      "_Id": "ABILITY_DETAIL_116",
+      "_Text": "Increases skill gauge fill rate by 10%\\nwhen the user\u0027s force strikes connect."
+    },
+    "ABILITY_DETAIL_117": {
+      "_Id": "ABILITY_DETAIL_117",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases skill gauge fill rate by 4%."
+    },
+    "ABILITY_DETAIL_118": {
+      "_Id": "ABILITY_DETAIL_118",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases skill gauge fill rate by 5%."
+    },
+    "ABILITY_DETAIL_119": {
+      "_Id": "ABILITY_DETAIL_119",
+      "_Text": "If the user wields a Bow:\\nincreases attack skill damage by 30%."
+    },
+    "ABILITY_DETAIL_120": {
+      "_Id": "ABILITY_DETAIL_120",
+      "_Text": "If the user wields a Bow:\\nincreases attack skill damage by 35%."
+    },
+    "ABILITY_DETAIL_121": {
+      "_Id": "ABILITY_DETAIL_121",
+      "_Text": "If the user is attuned to Wind: \\nresists afflictions once per quest."
+    },
+    "ABILITY_DETAIL_122": {
+      "_Id": "ABILITY_DETAIL_122",
+      "_Text": "If the user is attuned to Wind: \\nresists afflictions up to three times per quest."
+    },
+    "ABILITY_DETAIL_123": {
+      "_Id": "ABILITY_DETAIL_123",
+      "_Text": "Grants Ranzal an Attack Gauge and a Burst Gauge.\\nThe Attack Gauge fills when regular attacks connect\\nwith enemies, while the Burst Gauge is filled when\\nforce strikes successfully connect.\\nFor every completely filled gauge, Ranzal\u0027s defense\\nis increased. Any filled gauges are consumed when\\nusing the Cyclone Blade skill, increasing its power.\\n"
+    },
+    "ABILITY_DETAIL_124": {
+      "_Id": "ABILITY_DETAIL_124",
+      "_Text": "Grants Ranzal an Attack Gauge and a Burst Gauge.\\nThe Attack Gauge fills when regular attacks connect\\nwith enemies, while the Burst Gauge is filled when\\nforce strikes successfully connect.\\nFor every completely filled gauge, Ranzal\u0027s defense\\nis increased. Any filled gauges are consumed when\\nusing the Cyclone Blade skill, increasing its power.\\n"
+    },
+    "ABILITY_DETAIL_12460": {
+      "_Id": "ABILITY_DETAIL_12460",
+      "_Text": "Grants Ranzal an Attack Gauge and a Burst Gauge.\\nThe Attack Gauge fills when regular attacks connect\\nwith enemies, while the Burst Gauge is filled when\\nforce strikes successfully connect.\\nFor every completely filled gauge, Ranzal\u0027s defense\\nis increased. Any filled gauges are consumed when\\nusing the Cyclone Blade skill, increasing its power."
+    },
+    "ABILITY_DETAIL_125": {
+      "_Id": "ABILITY_DETAIL_125",
+      "_Text": "Increases rupie intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_126": {
+      "_Id": "ABILITY_DETAIL_126",
+      "_Text": "Increases rupie intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_127": {
+      "_Id": "ABILITY_DETAIL_127",
+      "_Text": "Increases eggsploration point intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_128": {
+      "_Id": "ABILITY_DETAIL_128",
+      "_Text": "Increases eggsploration point intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_129": {
+      "_Id": "ABILITY_DETAIL_129",
+      "_Text": "Increases eggsploration point intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_130": {
+      "_Id": "ABILITY_DETAIL_130",
+      "_Text": "Increases eggsploration point intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_131": {
+      "_Id": "ABILITY_DETAIL_131",
+      "_Text": "Increases papier-m\u00E2ch\u00E9 intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_132": {
+      "_Id": "ABILITY_DETAIL_132",
+      "_Text": "Increases papier-m\u00E2ch\u00E9 intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_133": {
+      "_Id": "ABILITY_DETAIL_133",
+      "_Text": "Increases papier-m\u00E2ch\u00E9 intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_134": {
+      "_Id": "ABILITY_DETAIL_134",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases defense by {ability_val0}% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_135": {
+      "_Id": "ABILITY_DETAIL_135",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases defense by {ability_val0}% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_136": {
+      "_Id": "ABILITY_DETAIL_136",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases defense by {ability_val0}% when HP is full."
+    },
+    "ABILITY_DETAIL_137": {
+      "_Id": "ABILITY_DETAIL_137",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases defense by {ability_val0}% when HP is full."
+    },
+    "ABILITY_DETAIL_138": {
+      "_Id": "ABILITY_DETAIL_138",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to High Brunhilda by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_139": {
+      "_Id": "ABILITY_DETAIL_139",
+      "_Text": "If the user is attuned to Shadow: \\nresists afflictions once per quest."
+    },
+    "ABILITY_DETAIL_140": {
+      "_Id": "ABILITY_DETAIL_140",
+      "_Text": "If the user is attuned to Shadow: \\nresists afflictions up to three times per quest."
+    },
+    "ABILITY_DETAIL_141": {
+      "_Id": "ABILITY_DETAIL_141",
+      "_Text": "If the user is attuned to Shadow: \\nreduces susceptibility to paralysis by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_142": {
+      "_Id": "ABILITY_DETAIL_142",
+      "_Text": "Increases strength by {ability_val0}% when HP is 50%\\nor below."
+    },
+    "ABILITY_DETAIL_143": {
+      "_Id": "ABILITY_DETAIL_143",
+      "_Text": "If the user is attuned to Wind:\\nincreases damage to enemies in break state by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_144": {
+      "_Id": "ABILITY_DETAIL_144",
+      "_Text": "If the user is attuned to Shadow:\\nincreases skill gauge fill rate by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_145": {
+      "_Id": "ABILITY_DETAIL_145",
+      "_Text": "If the user is attuned to Water:\\nincreases skill gauge fill rate by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_146": {
+      "_Id": "ABILITY_DETAIL_146",
+      "_Text": "Adds {ability_val0}% to the modifier applied to damage\\nwhen in dragon form."
+    },
+    "ABILITY_DETAIL_147": {
+      "_Id": "ABILITY_DETAIL_147",
+      "_Text": "If the user wields a Lance:\\nincreases attack skill damage by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_148": {
+      "_Id": "ABILITY_DETAIL_148",
+      "_Text": "If the user wields an Axe:\\nincreases critical rate by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_149": {
+      "_Id": "ABILITY_DETAIL_149",
+      "_Text": "If the user wields a Sword:\\nincreases attack skill damage by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_150": {
+      "_Id": "ABILITY_DETAIL_150",
+      "_Text": "If the user is attuned to Flame:\\nincreases skill gauge fill rate by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_151": {
+      "_Id": "ABILITY_DETAIL_151",
+      "_Text": "If the user wields a Bow:\\nincreases attack skill damage by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_152": {
+      "_Id": "ABILITY_DETAIL_152",
+      "_Text": "If the user is attuned to Shadow:\\nincreases duration of buff skills by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_153": {
+      "_Id": "ABILITY_DETAIL_153",
+      "_Text": "If the user is attuned to Water:\\nincreases critical rate by {ability_val0}% when\\nthe combo count is 15 or higher."
+    },
+    "ABILITY_DETAIL_154": {
+      "_Id": "ABILITY_DETAIL_154",
+      "_Text": "If the user is attuned to Shadow: \\nreduces susceptibility to paralysis by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_155": {
+      "_Id": "ABILITY_DETAIL_155",
+      "_Text": "Increases skill gauge fill rate by {ability_val0}%\\nwhen the user\u0027s force strikes connect."
+    },
+    "ABILITY_DETAIL_156": {
+      "_Id": "ABILITY_DETAIL_156",
+      "_Text": "Increases damage to burning enemies by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_157": {
+      "_Id": "ABILITY_DETAIL_157",
+      "_Text": "If the user is attuned to Shadow: \\nreduces susceptibility to paralysis by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_158": {
+      "_Id": "ABILITY_DETAIL_158",
+      "_Text": "Increases valor intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_159": {
+      "_Id": "ABILITY_DETAIL_159",
+      "_Text": "Increases valor intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_160": {
+      "_Id": "ABILITY_DETAIL_160",
+      "_Text": "Increases valor intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_161": {
+      "_Id": "ABILITY_DETAIL_161",
+      "_Text": "Increases valor intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_162": {
+      "_Id": "ABILITY_DETAIL_162",
+      "_Text": "Increases valor intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_163": {
+      "_Id": "ABILITY_DETAIL_163",
+      "_Text": "Increases valor intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_164": {
+      "_Id": "ABILITY_DETAIL_164",
+      "_Text": "Increases valor intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_165": {
+      "_Id": "ABILITY_DETAIL_165",
+      "_Text": "Fills {ability_val0}% of the dragon gauge at the start of quests."
+    },
+    "ABILITY_DETAIL_166": {
+      "_Id": "ABILITY_DETAIL_166",
+      "_Text": "Reduces flame damage taken by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_167": {
+      "_Id": "ABILITY_DETAIL_167",
+      "_Text": "Reduces water damage taken by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_168": {
+      "_Id": "ABILITY_DETAIL_168",
+      "_Text": "Reduces wind damage taken by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_169": {
+      "_Id": "ABILITY_DETAIL_169",
+      "_Text": "Reduces light damage taken by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_170": {
+      "_Id": "ABILITY_DETAIL_170",
+      "_Text": "Reduces shadow damage taken by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_171": {
+      "_Id": "ABILITY_DETAIL_171",
+      "_Text": "Reduces damage taken from Midgardsormr \\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_172": {
+      "_Id": "ABILITY_DETAIL_172",
+      "_Text": "Reduces damage taken from Mercury\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_173": {
+      "_Id": "ABILITY_DETAIL_173",
+      "_Text": "Reduces damage taken from Brunhilda\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_174": {
+      "_Id": "ABILITY_DETAIL_174",
+      "_Text": "Reduces damage taken from Jupiter\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_175": {
+      "_Id": "ABILITY_DETAIL_175",
+      "_Text": "Reduces damage taken from Zodiark\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_176": {
+      "_Id": "ABILITY_DETAIL_176",
+      "_Text": "Reduces damage taken from High Midgardsormr \\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_177": {
+      "_Id": "ABILITY_DETAIL_177",
+      "_Text": "Reduces damage taken from High Mercury\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_178": {
+      "_Id": "ABILITY_DETAIL_178",
+      "_Text": "Reduces damage taken from High Brunhilda\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_179": {
+      "_Id": "ABILITY_DETAIL_179",
+      "_Text": "Reduces damage taken from High Jupiter\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_180": {
+      "_Id": "ABILITY_DETAIL_180",
+      "_Text": "Reduces damage taken from High Zodiark\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_181": {
+      "_Id": "ABILITY_DETAIL_181",
+      "_Text": "Reduces susceptibility to curses by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_182": {
+      "_Id": "ABILITY_DETAIL_182",
+      "_Text": "If the user is attuned to Light: \\nreduces susceptibility to curses by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_183": {
+      "_Id": "ABILITY_DETAIL_183",
+      "_Text": "Reduces susceptibility to bog by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_184": {
+      "_Id": "ABILITY_DETAIL_184",
+      "_Text": "Reduces susceptibility to bog by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_185": {
+      "_Id": "ABILITY_DETAIL_185",
+      "_Text": "If the user is attuned to Wind: \\nreduces susceptibility to bog by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_186": {
+      "_Id": "ABILITY_DETAIL_186",
+      "_Text": "Fills 50% of the entire team\u0027s skill gauges when\\nthe user\u0027s HP drops to 30% (once per quest).\\nThis does not fill the skill gauges of dragons."
+    },
+    "ABILITY_DETAIL_187": {
+      "_Id": "ABILITY_DETAIL_187",
+      "_Text": "Fills 100% of the entire team\u0027s skill gauges when\\nthe user\u0027s HP drops to 30% (once per quest).\\nThis does not fill the skill gauges of dragons."
+    },
+    "ABILITY_DETAIL_188": {
+      "_Id": "ABILITY_DETAIL_188",
+      "_Text": "Increases the entire team\u0027s strength by 20%\\nand defense by 30% for 15 seconds when\\nthe user\u0027s HP drops to 30% (once per quest)."
+    },
+    "ABILITY_DETAIL_189": {
+      "_Id": "ABILITY_DETAIL_189",
+      "_Text": "Increases the entire team\u0027s strength by 30%\\nand defense by 40% for 15 seconds when\\nthe user\u0027s HP drops to 30% (once per quest)."
+    },
+    "ABILITY_DETAIL_190": {
+      "_Id": "ABILITY_DETAIL_190",
+      "_Text": "Increases the damage of the next attack skill\\nused by each team member by 30% when the\\nuser\u0027s HP drops to 30% (once per quest)."
+    },
+    "ABILITY_DETAIL_191": {
+      "_Id": "ABILITY_DETAIL_191",
+      "_Text": "Increases the damage of the next attack skill\\nused by each team member by 40% when the\\nuser\u0027s HP drops to 30% (once per quest)."
+    },
+    "ABILITY_DETAIL_194": {
+      "_Id": "ABILITY_DETAIL_194",
+      "_Text": "If the user is attuned to Wind: \\nreduces susceptibility to bog by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_195": {
+      "_Id": "ABILITY_DETAIL_195",
+      "_Text": "If the user is attuned to Wind: \\nreduces susceptibility to bog by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_196": {
+      "_Id": "ABILITY_DETAIL_196",
+      "_Text": "If the user is attuned to Flame:\\nresists afflictions up to two times per quest."
+    },
+    "ABILITY_DETAIL_197": {
+      "_Id": "ABILITY_DETAIL_197",
+      "_Text": "If the user is attuned to Light: \\nresists afflictions up to two times per quest."
+    },
+    "ABILITY_DETAIL_198": {
+      "_Id": "ABILITY_DETAIL_198",
+      "_Text": "If the user is attuned to Wind:\\nresists afflictions up to two times per quest."
+    },
+    "ABILITY_DETAIL_199": {
+      "_Id": "ABILITY_DETAIL_199",
+      "_Text": "If the user is attuned to Shadow: \\nresists afflictions up to two times per quest."
+    },
+    "ABILITY_DETAIL_200": {
+      "_Id": "ABILITY_DETAIL_200",
+      "_Text": "Buffs strength by 40% for 10 seconds when\\nHP drops to 30% (once per quest)."
+    },
+    "ABILITY_DETAIL_201": {
+      "_Id": "ABILITY_DETAIL_201",
+      "_Text": "Buffs strength by 50% for 10 seconds when\\nHP drops to 30% (once per quest)."
+    },
+    "ABILITY_DETAIL_202": {
+      "_Id": "ABILITY_DETAIL_202",
+      "_Text": "If the user is attuned to Flame: \\nresists afflictions up to three times per quest."
+    },
+    "ABILITY_DETAIL_203": {
+      "_Id": "ABILITY_DETAIL_203",
+      "_Text": "If the user is attuned to Light: \\nresists afflictions up to three times per quest."
+    },
+    "ABILITY_DETAIL_204": {
+      "_Id": "ABILITY_DETAIL_204",
+      "_Text": "Increases defense by {ability_val0}% when HP is full."
+    },
+    "ABILITY_DETAIL_205": {
+      "_Id": "ABILITY_DETAIL_205",
+      "_Text": "Buffs the entire team\u0027s strength by 8% for 10 seconds\\nupon successfully blinding an enemy. After activating,\\nthis ability will not activate again for five seconds."
+    },
+    "ABILITY_DETAIL_206": {
+      "_Id": "ABILITY_DETAIL_206",
+      "_Text": "Buffs the entire team\u0027s strength by 10% for 10 seconds\\nupon successfully blinding an enemy. After activating,\\nthis ability will not activate again for five seconds."
+    },
+    "ABILITY_DETAIL_207": {
+      "_Id": "ABILITY_DETAIL_207",
+      "_Text": "Increases HP by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_208": {
+      "_Id": "ABILITY_DETAIL_208",
+      "_Text": "Increases HP by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_209": {
+      "_Id": "ABILITY_DETAIL_209",
+      "_Text": "Increases HP by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_210": {
+      "_Id": "ABILITY_DETAIL_210",
+      "_Text": "Increases damage to enemies in overdrive state\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_211": {
+      "_Id": "ABILITY_DETAIL_211",
+      "_Text": "Adds {ability_val0}% to the modifier applied to damage\\nwhen in dragon form."
+    },
+    "ABILITY_DETAIL_212": {
+      "_Id": "ABILITY_DETAIL_212",
+      "_Text": "Increases strength by {ability_val0}% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_213": {
+      "_Id": "ABILITY_DETAIL_213",
+      "_Text": "If the user is attuned to Light:\\nincreases damage to enemies in overdrive state\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_214": {
+      "_Id": "ABILITY_DETAIL_214",
+      "_Text": "If the user is attuned to Light:\\nincreases damage to enemies in overdrive state\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_215": {
+      "_Id": "ABILITY_DETAIL_215",
+      "_Text": "Buffs the user\u0027s strength by 10% for 10 seconds\\nupon successfully paralyzing an enemy. After\\nactivating, this ability will not activate again\\nfor five seconds."
+    },
+    "ABILITY_DETAIL_216": {
+      "_Id": "ABILITY_DETAIL_216",
+      "_Text": "Buffs the user\u0027s strength by 15% for 10 seconds\\nupon successfully paralyzing an enemy. After\\nactivating, this ability will not activate again\\nfor five seconds."
+    },
+    "ABILITY_DETAIL_217": {
+      "_Id": "ABILITY_DETAIL_217",
+      "_Text": "Increases energy level by three stages for every\\nthree enemies defeated with force strikes."
+    },
+    "ABILITY_DETAIL_218": {
+      "_Id": "ABILITY_DETAIL_218",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to thaumians by 10%."
+    },
+    "ABILITY_DETAIL_219": {
+      "_Id": "ABILITY_DETAIL_219",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to thaumians by 15%."
+    },
+    "ABILITY_DETAIL_220": {
+      "_Id": "ABILITY_DETAIL_220",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases defense by {ability_val0}% when HP is full."
+    },
+    "ABILITY_DETAIL_221": {
+      "_Id": "ABILITY_DETAIL_221",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases defense by {ability_val0}% when HP is full."
+    },
+    "ABILITY_DETAIL_222": {
+      "_Id": "ABILITY_DETAIL_222",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to physians by 10%."
+    },
+    "ABILITY_DETAIL_223": {
+      "_Id": "ABILITY_DETAIL_223",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to physians by 15%."
+    },
+    "ABILITY_DETAIL_224": {
+      "_Id": "ABILITY_DETAIL_224",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases defense by {ability_val0}% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_225": {
+      "_Id": "ABILITY_DETAIL_225",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases defense by {ability_val0}% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_226": {
+      "_Id": "ABILITY_DETAIL_226",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to blinded enemies by 10%."
+    },
+    "ABILITY_DETAIL_227": {
+      "_Id": "ABILITY_DETAIL_227",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to blinded enemies by 15%."
+    },
+    "ABILITY_DETAIL_231": {
+      "_Id": "ABILITY_DETAIL_231",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases the potency of recovery skills by 5%."
+    },
+    "ABILITY_DETAIL_233": {
+      "_Id": "ABILITY_DETAIL_233",
+      "_Text": "Reduces susceptibility to stun by 50%. When Mym\\nis hit by an attack that would have stunned her,\\nthe skill gauge for the Dragon Claw skill fills by\\n25%. After activating, this gauge-filling effect\\nwill not activate again for 15 seconds."
+    },
+    "ABILITY_DETAIL_234": {
+      "_Id": "ABILITY_DETAIL_234",
+      "_Text": "Reduces susceptibility to stun by 100%. When Mym\\nis hit by an attack that would have stunned her,\\nthe skill gauge for the Dragon Claw skill fills by\\n50%. After activating, this gauge-filling effect will\\nnot activate again for 15 seconds."
+    },
+    "ABILITY_DETAIL_237": {
+      "_Id": "ABILITY_DETAIL_237",
+      "_Text": "Reduces susceptibility to burning by 100%.\\nWhen shapeshifting for the first time, Mym\\nwill transform into Brunhilda regardless of what\\ndragon she is equipped with, and her strength\\nwill increase by 15% for the remainder of the quest.\\nThe second time onwards, she will transform into\\nHigh Brunhilda instead, and her attack rate while\\nshapeshifted will increase by 15%."
+    },
+    "ABILITY_DETAIL_238": {
+      "_Id": "ABILITY_DETAIL_238",
+      "_Text": "Reduces susceptibility to burning by 100%.\\nWhen shapeshifting for the first time, Mym\\nwill transform into Brunhilda regardless of what\\ndragon she is equipped with, her strength will\\nincrease by 15% for the remainder of the quest,\\nand the skill Flames of Passion will be powered\\nup for the remainder of the quest. The second time\\nonwards, she will transform into High Brunhilda\\ninstead, and her attack rate while shapeshifted\\nwill increase by 15%."
+    },
+    "ABILITY_DETAIL_241": {
+      "_Id": "ABILITY_DETAIL_241",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases strength by {ability_val0}% when HP is 70% or above."
+    },
+    "ABILITY_DETAIL_242": {
+      "_Id": "ABILITY_DETAIL_242",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases strength by 8% when HP is full."
+    },
+    "ABILITY_DETAIL_243": {
+      "_Id": "ABILITY_DETAIL_243",
+      "_Text": "Adds 5% to the modifier applied to critical damage\\nfor every 20-hit combo (up to three times per quest)."
+    },
+    "ABILITY_DETAIL_244": {
+      "_Id": "ABILITY_DETAIL_244",
+      "_Text": "Adds 6% to the modifier applied to critical damage\\nfor every 20-hit combo (up to three times per quest)."
+    },
+    "ABILITY_DETAIL_245": {
+      "_Id": "ABILITY_DETAIL_245",
+      "_Text": "Increases critical rate by 3% for every 30-hit combo\\n(up to three times per quest)."
+    },
+    "ABILITY_DETAIL_246": {
+      "_Id": "ABILITY_DETAIL_246",
+      "_Text": "Increases skill gauge fill rate relative to\\nthe number of active team members.\\nThe more active members, the greater\\nthe increase will be."
+    },
+    "ABILITY_DETAIL_247": {
+      "_Id": "ABILITY_DETAIL_247",
+      "_Text": "Buffs the entire team\u0027s strength by 10% for 10 seconds\\nupon successfully putting an enemy to sleep.\\nAfter activating, this ability will not activate again\\nfor five seconds."
+    },
+    "ABILITY_DETAIL_248": {
+      "_Id": "ABILITY_DETAIL_248",
+      "_Text": "Buffs the entire team\u0027s strength by 15% for 10 seconds\\nupon successfully putting an enemy to sleep.\\nAfter activating, this ability will not activate again\\nfor five seconds."
+    },
+    "ABILITY_DETAIL_249": {
+      "_Id": "ABILITY_DETAIL_249",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to undead by 10%."
+    },
+    "ABILITY_DETAIL_250": {
+      "_Id": "ABILITY_DETAIL_250",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to undead by 15%."
+    },
+    "ABILITY_DETAIL_252": {
+      "_Id": "ABILITY_DETAIL_252",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases attack skill damage by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_253": {
+      "_Id": "ABILITY_DETAIL_253",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases attack skill damage by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_259": {
+      "_Id": "ABILITY_DETAIL_259",
+      "_Text": "If the user is attuned to Water:\\nresists afflictions once per quest."
+    },
+    "ABILITY_DETAIL_260": {
+      "_Id": "ABILITY_DETAIL_260",
+      "_Text": "If the user is attuned to Water:\\nresists afflictions up to two times per quest."
+    },
+    "ABILITY_DETAIL_261": {
+      "_Id": "ABILITY_DETAIL_261",
+      "_Text": "If the user is attuned to Water:\\nresists afflictions up to three times per quest."
+    },
+    "ABILITY_DETAIL_262": {
+      "_Id": "ABILITY_DETAIL_262",
+      "_Text": "If the user is attuned to Water:\\nincreases skill gauge fill rate by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_263": {
+      "_Id": "ABILITY_DETAIL_263",
+      "_Text": "If the user is attuned to Water:\\nincreases skill gauge fill rate by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_264": {
+      "_Id": "ABILITY_DETAIL_264",
+      "_Text": "If the user is attuned to Flame:\\nincreases critical rate by {ability_val0}% when\\nthe combo count is 15 or higher."
+    },
+    "ABILITY_DETAIL_265": {
+      "_Id": "ABILITY_DETAIL_265",
+      "_Text": "If the user is attuned to Flame:\\nincreases critical rate by {ability_val0}% when\\nthe combo count is 15 or higher."
+    },
+    "ABILITY_DETAIL_266": {
+      "_Id": "ABILITY_DETAIL_266",
+      "_Text": "If the user is attuned to Flame:\\nincreases critical rate by {ability_val0}% when\\nthe combo count is 15 or higher."
+    },
+    "ABILITY_DETAIL_267": {
+      "_Id": "ABILITY_DETAIL_267",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to blinded enemies by 10%."
+    },
+    "ABILITY_DETAIL_268": {
+      "_Id": "ABILITY_DETAIL_268",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to blinded enemies by 15%."
+    },
+    "ABILITY_DETAIL_270": {
+      "_Id": "ABILITY_DETAIL_270",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to High Mercury by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_271": {
+      "_Id": "ABILITY_DETAIL_271",
+      "_Text": "Grants an HP regen buff to the entire team\\nfor 20 seconds each time a defense up buff\\nis received."
+    },
+    "ABILITY_DETAIL_272": {
+      "_Id": "ABILITY_DETAIL_272",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases attack skill damage by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_273": {
+      "_Id": "ABILITY_DETAIL_273",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases attack skill damage by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_277": {
+      "_Id": "ABILITY_DETAIL_277",
+      "_Text": "If the user is attuned to Wind: \\nincreases skill gauge fill rate by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_278": {
+      "_Id": "ABILITY_DETAIL_278",
+      "_Text": "If the user is attuned to Wind: \\nincreases skill gauge fill rate by {ability_val0}%."
+    },
+    "ABILITY_DETAIL_279": {
+      "_Id": "ABILITY_DETAIL_279",
+      "_Text": "Using Ancient Ray grants Cleo the\\n\u0022Altered Strike\u0022 effect. When this effect\\nis active, Cleo\u0027s next force strike\\nwill create a buff zone that lasts for\\n10 seconds and increases the strength\\nof adventurers inside it by 20%.\\nThis effect cannot stack, and will be\\nconsumed on use."
+    },
+    "ABILITY_DETAIL_280": {
+      "_Id": "ABILITY_DETAIL_280",
+      "_Text": "Using Ancient Ray grants Cleo the\\n\u0022Altered Strike\u0022 effect. When this effect\\nis active, Cleo\u0027s next force strike\\nwill create a buff zone that lasts for\\n10 seconds and increases the strength\\nof adventurers inside it by 25%.\\nThis effect cannot stack, and will be\\nconsumed on use."
+    },
+    "ABILITY_DETAIL_282": {
+      "_Id": "ABILITY_DETAIL_282",
+      "_Text": "Reduces susceptibility to blindness\\nand paralysis by 50%."
+    },
+    "ABILITY_DETAIL_283": {
+      "_Id": "ABILITY_DETAIL_283",
+      "_Text": "Reduces susceptibility to blindness\\nand paralysis by 100%."
+    },
+    "ABILITY_DETAIL_284": {
+      "_Id": "ABILITY_DETAIL_284",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to undead by 10%."
+    },
+    "ABILITY_DETAIL_285": {
+      "_Id": "ABILITY_DETAIL_285",
+      "_Text": "If the user is attuned to {element_owner}: \\nincreases damage to undead by 15%."
+    },
+    "ABILITY_DETAIL_288": {
+      "_Id": "ABILITY_DETAIL_288",
+      "_Text": "Grants a 50% chance that a user\u0027s\\nenergy level will increase by an\\nadditional stage upon being increased."
+    },
+    "ABILITY_DETAIL_289": {
+      "_Id": "ABILITY_DETAIL_289",
+      "_Text": "Grants an 80% chance that a user\u0027s\\nenergy level will increase by an\\nadditional stage upon being increased."
+    },
+    "ABILITY_DETAIL_290": {
+      "_Id": "ABILITY_DETAIL_290",
+      "_Text": "Increases strength by 15% and attack rate by 10%\\nwhen HP is 30% or below."
+    },
+    "ABILITY_DETAIL_291": {
+      "_Id": "ABILITY_DETAIL_291",
+      "_Text": "Increases strength by 20% and attack rate by 10%\\nwhen HP is 30% or below."
+    },
+    "ABILITY_DETAIL_292": {
+      "_Id": "ABILITY_DETAIL_292",
+      "_Text": "Increases the user\u0027s strength and critical rate as their\\nenergy level increases. The maximum bonus, given\\nwhen the user is energized, is strength \u002B15% and\\ncritical rate \u002B6%."
+    },
+    "ABILITY_DETAIL_297": {
+      "_Id": "ABILITY_DETAIL_297",
+      "_Text": "Increases the user\u0027s strength and critical rate as their\\nenergy level increases. The maximum bonus, given\\nwhen the user is energized, is strength \u002B20% and\\ncritical rate \u002B8%."
+    },
+    "ABILITY_DETAIL_309": {
+      "_Id": "ABILITY_DETAIL_309",
+      "_Text": "Increases the strength of the adventurer you\\nare currently controlling by 8% for 10 seconds\\nevery time their initial skill, displayed at the\\ntop of their skill list, becomes available for use.\\nAfter activating, this ability will not\\nactivate again for 15 seconds."
+    },
+    "ABILITY_DETAIL_310": {
+      "_Id": "ABILITY_DETAIL_310",
+      "_Text": "Increases the strength of the adventurer you\\nare currently controlling by 10% for 10 seconds\\nevery time their initial skill, displayed at the\\ntop of their skill list, becomes available for use.\\nAfter activating, this ability will not\\nactivate again for 15 seconds."
+    },
+    "ABILITY_DETAIL_311": {
+      "_Id": "ABILITY_DETAIL_311",
+      "_Text": "Increases the defense of the adventurer you\\nare currently controlling by 10% for 10 seconds\\nevery time their initial skill, displayed at the\\ntop of their skill list, becomes available for use.\\nAfter activating, this ability will not\\nactivate again for 15 seconds."
+    },
+    "ABILITY_DETAIL_312": {
+      "_Id": "ABILITY_DETAIL_312",
+      "_Text": "Increases the defense of the adventurer you\\nare currently controlling by 15% for 10 seconds\\nevery time their initial skill, displayed at the\\ntop of their skill list, becomes available for use.\\nAfter activating, this ability will not\\nactivate again for 15 seconds."
+    },
+    "ABILITY_DETAIL_313": {
+      "_Id": "ABILITY_DETAIL_313",
+      "_Text": "Increases the critical rate of the adventurer you\\nare currently controlling by 5% for 5 seconds\\nevery time their initial skill, displayed at the\\ntop of their skill list, becomes available for use.\\nAfter activating, this ability will not\\nactivate again for 15 seconds."
+    },
+    "ABILITY_DETAIL_314": {
+      "_Id": "ABILITY_DETAIL_314",
+      "_Text": "Increases the critical rate of the adventurer you\\nare currently controlling by 6% for 5 seconds\\nevery time their initial skill, displayed at the\\ntop of their skill list, becomes available for use.\\nAfter activating, this ability will not\\nactivate again for 15 seconds."
+    },
+    "ABILITY_DETAIL_315": {
+      "_Id": "ABILITY_DETAIL_315",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases strength by 30% and adds 50% to the\\nmodifier applied to critical damage."
+    },
+    "ABILITY_DETAIL_316": {
+      "_Id": "ABILITY_DETAIL_316",
+      "_Text": "If the user is attuned to {element_owner}:\\nincreases strength by 45% and adds 55% to the\\nmodifier applied to critical damage."
+    },
+    "ABILITY_DETAIL_320": {
+      "_Id": "ABILITY_DETAIL_320",
+      "_Text": "Increases mettle intake for clearing quests\\nby {ability_val0}%."
+    },
+    "ABILITY_DETAIL_321": {
+      "_Id": "ABILITY_DETAIL_321",
+      "_Text": "Increases mettle intake for clearing quests\\nby {ability_val0}%."
+    }}
