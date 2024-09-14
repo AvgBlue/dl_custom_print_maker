@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'file_upload_button.dart'; 
+import 'second_screen.dart';
+import 'file_upload_button.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,13 +23,21 @@ class FileUploadScreen extends StatefulWidget {
 }
 
 class _FileUploadScreenState extends State<FileUploadScreen> {
-  String? fileName;
-  String? fileContent;
-
   void updateFileName(String? name, String? content) {
     setState(() {
-      fileName = name;
-      fileContent = content;
+      if (name != null && content != null) {
+        String fileName = name;
+        String fileContent = content;
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SecondScreen(
+              fileName: fileName,
+              fileContent: fileContent,
+            ),
+          ),
+        );
+      }
     });
   }
 
@@ -35,15 +45,13 @@ class _FileUploadScreenState extends State<FileUploadScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('File Upload Example'),
+        title: const Text('Dragalia Lost Print Maker'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             FileUploadButton(onFileSelected: updateFileName),
-            SizedBox(height: 20),
-            if (fileName != null) Text('Selected File: $fileName'),
           ],
         ),
       ),
