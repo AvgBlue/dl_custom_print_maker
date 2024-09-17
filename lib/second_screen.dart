@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'tlisman.dart';
+import 'character.dart';
 import 'dart:convert';
 import 'ability.dart';
 
-//TODO: to add the ability to sreach ability by cherecter
-//TODO: to fix the text
-//TODO: to add the functioality to the delete button
+//TODO: to add a divaider
+//TODO: to add the ability to add new wrymprint
+//TODO: to add the ability to save the file
 
 class SecondScreen extends StatefulWidget {
   final String fileName;
@@ -31,14 +32,27 @@ class _SecondScreenState extends State<SecondScreen> {
   List<Talisman>? talismanList;
   Talisman? selectedTalisman;
   int maxKeyId = 0;
+  List<Map<String, dynamic>>? partyList;
 
   @override
   void initState() {
     super.initState();
+    final Map<String, dynamic> jsonData = jsonDecode(widget.fileContent);
+
+    if (jsonData.containsKey('data') &&
+        jsonData['data'].containsKey('party_list')) {
+      List<dynamic> partyListDynamic = jsonData['data']['party_list'];
+      setState(() {
+        partyList = partyListDynamic
+            .map((item) => item as Map<String, dynamic>)
+            .toList();
+      });
+    }
+
     TalismanWidget.characterData = widget.characterData;
     TalismanWidget.abilityData = widget.abilityData;
+
     // load the save file talismans
-    final Map<String, dynamic> jsonData = jsonDecode(widget.fileContent);
     if (jsonData.containsKey('data') &&
         jsonData['data'].containsKey('talisman_list')) {
       List<dynamic> talismanListJson = jsonData['data']['talisman_list'];
@@ -58,6 +72,10 @@ class _SecondScreenState extends State<SecondScreen> {
     });
     AbilityMenu.abilityMap![0] =
         Ability(id: 0, name: '<No Ability>', details: '', belongsTo: []);
+    CharacterMenu.characterList = widget.characterData!
+        .map((json) => Character.fromJson(json as Map<String, dynamic>))
+        .toList();
+    CharacterMenu.characterList!.sort((a, b) => a.title.compareTo(b.title));
   }
 
   void Function() onEdit(Talisman talisman) {
@@ -84,9 +102,58 @@ class _SecondScreenState extends State<SecondScreen> {
     };
   }
 
+  void Function() onDelete(Talisman talisman) {
+    return () {
+      setState(() {
+        // 1. Remove the talisman from the talismanList
+        talismanList?.remove(talisman);
+
+        // 2. Iterate through each party in the partyList
+        if (partyList != null) {
+          for (var party in partyList!) {
+            if (party.containsKey('party_setting_list')) {
+              List<dynamic> units = party['party_setting_list'];
+
+              // Iterate through each unit in the party_setting_list
+              for (var unit in units) {
+                if (unit is Map<String, dynamic>) {
+                  // Check if the unit has the 'equip_talisman_key_id' and if it matches the talisman to be deleted
+                  if (unit['equip_talisman_key_id'] == talisman.talismanKeyId) {
+                    // Remove the talisman by setting the key to 0 or any default value you prefer
+                    unit['equip_talisman_key_id'] = 0;
+                    print('Removing the talisman');
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // Optional: Update maxKeyId if necessary
+        if (talismanList != null && talismanList!.isNotEmpty) {
+          maxKeyId = talismanList!
+              .map((t) => t.talismanKeyId)
+              .reduce((a, b) => a > b ? a : b);
+        } else {
+          maxKeyId = 0;
+        }
+
+        // Optional: If you need to persist these changes back to the JSON or a file, handle it here.
+        // For example:
+        // widget.saveFileContent(jsonEncode(jsonData));
+      });
+    };
+  }
+
   void onSelectAbility(int index, int value) {
     setState(() {
       selectedTalisman![index] = value;
+    });
+  }
+
+  void onSelectCharacter(int value) {
+    setState(() {
+      selectedTalisman!.talismanId = value;
     });
   }
 
@@ -108,7 +175,7 @@ class _SecondScreenState extends State<SecondScreen> {
                   talisman: talisman,
                   onEdit: onEdit(talisman),
                   onCopy: onCopy(talisman),
-                  onDelete: () => print('delete'),
+                  onDelete: onDelete(talisman),
                 );
               },
             ),
@@ -117,6 +184,7 @@ class _SecondScreenState extends State<SecondScreen> {
               child: EditBox(
             selectedTalisman: selectedTalisman,
             onSelectAbility: onSelectAbility,
+            onSelectCharacter: onSelectCharacter,
           ))
         ],
       ),
@@ -127,10 +195,12 @@ class _SecondScreenState extends State<SecondScreen> {
 class EditBox extends StatefulWidget {
   final Talisman? selectedTalisman;
   final void Function(int index, int value) onSelectAbility;
+  final void Function(int value) onSelectCharacter;
   const EditBox(
       {super.key,
       required this.selectedTalisman,
-      required this.onSelectAbility});
+      required this.onSelectAbility,
+      required this.onSelectCharacter});
 
   @override
   State<EditBox> createState() => _EditBoxState();
@@ -151,6 +221,7 @@ class _EditBoxState extends State<EditBox> {
         color: const Color.fromARGB(255, 134, 121, 120),
         child: Column(
           children: [
+            TalismanWidget(talisman: widget.selectedTalisman),
             NavigationBar(
               selectedIndex: _selectedIndex,
               onDestinationSelected: _onItemTapped,
@@ -173,9 +244,13 @@ class _EditBoxState extends State<EditBox> {
                 ),
               ],
             ),
+            SizedBox(height: 10),
             (widget.selectedTalisman != null)
                 ? <Widget>[
-                    Text(widget.selectedTalisman?.talismanId?.toString() ?? ''),
+                    CharacterMenu(
+                      onSelectCharacter: widget.onSelectCharacter,
+                      selectedTalisman: widget.selectedTalisman,
+                    ),
                     AbilityMenu(
                       onSelectAbility: widget.onSelectAbility,
                       abilityIndex: 1,
@@ -195,6 +270,88 @@ class _EditBoxState extends State<EditBox> {
                 : const Text('Selecte a wyrmprint to edit'),
           ],
         ));
+  }
+}
+
+class CharacterMenu extends StatefulWidget {
+  final void Function(int value) onSelectCharacter;
+  final Talisman? selectedTalisman;
+  static List<Character>? characterList;
+
+  const CharacterMenu(
+      {super.key,
+      required this.onSelectCharacter,
+      required this.selectedTalisman});
+
+  @override
+  State<CharacterMenu> createState() => _CharacterMenuState();
+}
+
+class _CharacterMenuState extends State<CharacterMenu> {
+  List<Character> filteredCharacters = [];
+  String searchTerm = '';
+  Character? selectedCharacter;
+
+  @override
+  void initState() {
+    super.initState();
+    filteredCharacters = CharacterMenu.characterList!;
+    selectedCharacter = CharacterMenu.characterList!.firstWhere(
+        (character) => character.id == widget.selectedTalisman!.talismanId);
+  }
+
+  void filterCharacters(String query) {
+    setState(() {
+      searchTerm = query.toLowerCase();
+      filteredCharacters = CharacterMenu.characterList!.where((character) {
+        return character.title.toLowerCase().contains(searchTerm) ||
+            character.subtitle.toLowerCase().contains(searchTerm);
+      }).toList();
+    });
+  }
+
+  void selectCharacter(Character character) {
+    setState(() {
+      selectedCharacter = character;
+      widget.onSelectCharacter(character.id);
+      searchTerm = ''; // Clear the search term after selecting
+      filteredCharacters =
+          CharacterMenu.characterList!; // Reset the filtered list
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Column(
+        children: [
+          TextField(
+            decoration: InputDecoration(
+              labelText: selectedCharacter != null
+                  ? 'Selected: ${selectedCharacter!.title}'
+                  : 'Search for character',
+              border: const OutlineInputBorder(),
+            ),
+            onChanged: filterCharacters,
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: filteredCharacters.length,
+              itemBuilder: (context, index) {
+                final character = filteredCharacters[index];
+                return ListTile(
+                  title: Text(character.title),
+                  subtitle: Text(character.subtitle),
+                  onTap: () {
+                    selectCharacter(character); // Select character when tapped
+                  },
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -232,7 +389,9 @@ class _AbilityMenuState extends State<AbilityMenu> {
       searchTerm = query.toLowerCase();
       filteredAbilities = AbilityMenu.abilityMap!.values.where((ability) {
         return ability.name.toLowerCase().contains(searchTerm) ||
-            ability.details.toLowerCase().contains(searchTerm);
+            ability.details.toLowerCase().contains(searchTerm) ||
+            ability.belongsTo
+                .any((item) => item.toLowerCase().contains(searchTerm));
       }).toList();
     });
   }
@@ -268,7 +427,9 @@ class _AbilityMenuState extends State<AbilityMenu> {
                 final ability = filteredAbilities[index];
                 return ListTile(
                   title: Text(ability.name),
-                  subtitle: Text(ability.details),
+                  subtitle: Text(
+                    ability.details.replaceAll('\\n', '\n'),
+                  ),
                   onTap: () {
                     selectAbility(ability); // Select ability when tapped
                   },
