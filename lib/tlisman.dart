@@ -76,6 +76,33 @@ class Talisman {
     );
     return copy;
   }
+
+  int operator [](int index) {
+    switch (index) {
+      case 1:
+        return talismanAbilityId1;
+      case 2:
+        return talismanAbilityId2;
+      case 3:
+        return talismanAbilityId3;
+      default:
+        return 0;
+    }
+  }
+
+  void operator []=(int index, int value) {
+    switch (index) {
+      case 1:
+        talismanAbilityId1 = value;
+        break;
+      case 2:
+        talismanAbilityId2 = value;
+        break;
+      case 3:
+        talismanAbilityId3 = value;
+        break;
+    }
+  }
 }
 
 //TODO: to rethink the name maybe have it call TalismanInfo

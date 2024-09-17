@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'tlisman.dart';
 import 'dart:convert';
+import 'ability.dart';
 
-//TODO: add edit fucntionality to the edit screen
+//TODO: to add the ability to sreach ability by cherecter
+//TODO: to fix the text
 //TODO: to add the functioality to the delete button
 
 class SecondScreen extends StatefulWidget {
@@ -50,6 +52,12 @@ class _SecondScreenState extends State<SecondScreen> {
                 talisman.talismanKeyId > max ? talisman.talismanKeyId : max);
       });
     }
+    // Set the AbilityMap for AbilityMenu
+    AbilityMenu.abilityMap = widget.abilityData!.map((key, value) {
+      return MapEntry(int.parse(key), Ability.fromJson(value));
+    });
+    AbilityMenu.abilityMap![0] =
+        Ability(id: 0, name: '<No Ability>', details: '', belongsTo: []);
   }
 
   void Function() onEdit(Talisman talisman) {
@@ -76,6 +84,12 @@ class _SecondScreenState extends State<SecondScreen> {
     };
   }
 
+  void onSelectAbility(int index, int value) {
+    setState(() {
+      selectedTalisman![index] = value;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     List<Talisman>? list = talismanList?.reversed.toList();
@@ -100,8 +114,9 @@ class _SecondScreenState extends State<SecondScreen> {
             ),
           ),
           Expanded(
-              child: editBox(
+              child: EditBox(
             selectedTalisman: selectedTalisman,
+            onSelectAbility: onSelectAbility,
           ))
         ],
       ),
@@ -109,15 +124,19 @@ class _SecondScreenState extends State<SecondScreen> {
   }
 }
 
-class editBox extends StatefulWidget {
+class EditBox extends StatefulWidget {
   final Talisman? selectedTalisman;
-  const editBox({super.key, required this.selectedTalisman});
+  final void Function(int index, int value) onSelectAbility;
+  const EditBox(
+      {super.key,
+      required this.selectedTalisman,
+      required this.onSelectAbility});
 
   @override
-  State<editBox> createState() => _editBoxState();
+  State<EditBox> createState() => _EditBoxState();
 }
 
-class _editBoxState extends State<editBox> {
+class _EditBoxState extends State<EditBox> {
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
@@ -129,10 +148,9 @@ class _editBoxState extends State<editBox> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.red,
+        color: const Color.fromARGB(255, 134, 121, 120),
         child: Column(
           children: [
-            TalismanWidget(talisman: widget.selectedTalisman),
             NavigationBar(
               selectedIndex: _selectedIndex,
               onDestinationSelected: _onItemTapped,
@@ -155,17 +173,112 @@ class _editBoxState extends State<editBox> {
                 ),
               ],
             ),
-            <Widget>[
-              Text(widget.selectedTalisman?.talismanId?.toString() ?? ''),
-              Text(widget.selectedTalisman?.talismanAbilityId1?.toString() ??
-                  ''),
-              Text(widget.selectedTalisman?.talismanAbilityId2?.toString() ??
-                  ''),
-              Text(widget.selectedTalisman?.talismanAbilityId3?.toString() ??
-                  ''),
-            ][_selectedIndex],
+            (widget.selectedTalisman != null)
+                ? <Widget>[
+                    Text(widget.selectedTalisman?.talismanId?.toString() ?? ''),
+                    AbilityMenu(
+                      onSelectAbility: widget.onSelectAbility,
+                      abilityIndex: 1,
+                      selectedTalisman: widget.selectedTalisman,
+                    ),
+                    AbilityMenu(
+                      onSelectAbility: widget.onSelectAbility,
+                      abilityIndex: 2,
+                      selectedTalisman: widget.selectedTalisman,
+                    ),
+                    AbilityMenu(
+                      onSelectAbility: widget.onSelectAbility,
+                      abilityIndex: 3,
+                      selectedTalisman: widget.selectedTalisman,
+                    ),
+                  ][_selectedIndex]
+                : const Text('Selecte a wyrmprint to edit'),
           ],
         ));
+  }
+}
+
+class AbilityMenu extends StatefulWidget {
+  final void Function(int index, int value) onSelectAbility;
+  final Talisman? selectedTalisman;
+  final int abilityIndex;
+  static Map<int, Ability>? abilityMap;
+
+  const AbilityMenu(
+      {super.key,
+      required this.selectedTalisman,
+      required this.abilityIndex,
+      required this.onSelectAbility});
+
+  @override
+  State<AbilityMenu> createState() => _AbilityMenuState();
+}
+
+class _AbilityMenuState extends State<AbilityMenu> {
+  List<Ability> filteredAbilities = [];
+  String searchTerm = '';
+  Ability? selectedAbility;
+
+  @override
+  void initState() {
+    super.initState();
+    filteredAbilities = AbilityMenu.abilityMap!.values.toList();
+    selectedAbility =
+        AbilityMenu.abilityMap![widget.selectedTalisman![widget.abilityIndex]];
+  }
+
+  void filterAbilities(String query) {
+    setState(() {
+      searchTerm = query.toLowerCase();
+      filteredAbilities = AbilityMenu.abilityMap!.values.where((ability) {
+        return ability.name.toLowerCase().contains(searchTerm) ||
+            ability.details.toLowerCase().contains(searchTerm);
+      }).toList();
+    });
+  }
+
+  void selectAbility(Ability ability) {
+    setState(() {
+      selectedAbility = ability;
+      widget.onSelectAbility(widget.abilityIndex, selectedAbility!.id);
+      searchTerm = ''; // Clear the search term after selecting
+      filteredAbilities =
+          AbilityMenu.abilityMap!.values.toList(); // Reset the filtered list
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Column(
+        children: [
+          TextField(
+            decoration: InputDecoration(
+              labelText: selectedAbility != null
+                  ? 'Selected: ${selectedAbility!.name}'
+                  : 'Search for ability',
+              border: const OutlineInputBorder(),
+            ),
+            onChanged: filterAbilities,
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: filteredAbilities.length,
+              itemBuilder: (context, index) {
+                final ability = filteredAbilities[index];
+                return ListTile(
+                  title: Text(ability.name),
+                  subtitle: Text(ability.details),
+                  onTap: () {
+                    selectAbility(ability); // Select ability when tapped
+                  },
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
