@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'second_screen.dart';
-import 'file_upload_button.dart';
+import 'file_upload_button.dart'; 
 
+//{0:"<No Attunement>",1:"Flame",2:"Water",3:"Wind",4:"Light",5:"Shadow",98:"<Portrait Dependent Elemental>"}
+//{0:"<No Type>",1:"Sword",2:"Blade",3:"Dagger",4:"Axe",5:"Lance",6:"Bow",7:"Wand",8:"Staff",9:"Manacaster", 98: "<Portrait Dependent Weapon>"}
 void main() {
   runApp(MyApp());
 }
@@ -23,7 +25,9 @@ class FileUploadScreen extends StatefulWidget {
 }
 
 class _FileUploadScreenState extends State<FileUploadScreen> {
-  void updateFileName(String? name, String? content) {
+  // TODO: to refactor names
+  void updateFileName(String? name, String? content,
+      List<dynamic>? characterData, Map<String, dynamic>? abilityData) {
     setState(() {
       if (name != null && content != null) {
         String fileName = name;
@@ -34,6 +38,8 @@ class _FileUploadScreenState extends State<FileUploadScreen> {
             builder: (context) => SecondScreen(
               fileName: fileName,
               fileContent: fileContent,
+              characterData: characterData,
+              abilityData: abilityData,
             ),
           ),
         );
