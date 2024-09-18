@@ -67,12 +67,12 @@ class Talisman {
   Talisman createCopy(int talismanKeyId) {
     Talisman copy = Talisman.createTalisman(
       talismanKeyId,
-      this.talismanId,
-      this.talismanAbilityId1,
-      this.talismanAbilityId2,
-      this.talismanAbilityId3,
-      this.additionalHp,
-      this.additionalAttack,
+      talismanId,
+      talismanAbilityId1,
+      talismanAbilityId2,
+      talismanAbilityId3,
+      additionalHp,
+      additionalAttack,
     );
     return copy;
   }
@@ -102,6 +102,21 @@ class Talisman {
         talismanAbilityId3 = value;
         break;
     }
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'talisman_key_id': talismanKeyId,
+      'talisman_id': talismanId,
+      'is_lock': isLock,
+      'is_new': isNew,
+      'talisman_ability_id_1': talismanAbilityId1,
+      'talisman_ability_id_2': talismanAbilityId2,
+      'talisman_ability_id_3': talismanAbilityId3,
+      'additional_hp': additionalHp,
+      'additional_attack': additionalAttack,
+      'gettime': gettime,
+    };
   }
 }
 
@@ -136,7 +151,7 @@ class TalismanWidget extends StatelessWidget {
       return null;
     }
     if (0 == id) {
-      return 'No ability in this slot';
+      return 'No Ability In This Slot';
     }
     // Convert the id to a string (since JSON keys are strings)
     String key = id.toString();

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'tlisman.dart';
+import 'talisman.dart';
 import 'character.dart';
 import 'dart:convert';
 import 'ability.dart';
+import 'custom_menu.dart';
+import 'dart:html' as html;
 
 //TODO: to add a divaider
 //TODO: to add the ability to add new wrymprint
@@ -121,7 +123,6 @@ class _SecondScreenState extends State<SecondScreen> {
                   if (unit['equip_talisman_key_id'] == talisman.talismanKeyId) {
                     // Remove the talisman by setting the key to 0 or any default value you prefer
                     unit['equip_talisman_key_id'] = 0;
-                    print('Removing the talisman');
                   }
                 }
               }
@@ -157,12 +158,60 @@ class _SecondScreenState extends State<SecondScreen> {
     });
   }
 
+  void downloadFile() {
+    // Append "_modified.json" to the filename
+    final String newFileName = 'modified_${widget.fileName}';
+
+    // Parse the original fileContent
+    Map<String, dynamic> jsonData = jsonDecode(widget.fileContent);
+
+    // Update 'talisman_list' and 'party_list' with the modified data
+    if (jsonData.containsKey('data')) {
+      if (talismanList != null) {
+        jsonData['data']['talisman_list'] =
+            talismanList!.map((talisman) => talisman.toJson()).toList();
+      }
+      if (partyList != null) {
+        jsonData['data']['party_list'] = partyList;
+      }
+    }
+
+    // Convert the updated jsonData to JSON string with proper formatting
+    String newFileContent =
+        const JsonEncoder.withIndent('  ').convert(jsonData);
+
+    // Save the file with the new name and content
+    saveFile(newFileName, 'application/json', newFileContent);
+  }
+
+  void saveFile(String fileName, String fileType, String content) {
+    // Create a Blob with the content and specified file type
+    final blob = html.Blob([content], fileType);
+
+    // Create an anchor element and set its href to the Blob URL
+    final url = html.Url.createObjectUrlFromBlob(blob);
+    final anchor = html.AnchorElement(href: url)
+      ..setAttribute("download", fileName)
+      ..click(); // Trigger the download by clicking the anchor element
+
+    // Revoke the URL after the download is initiated
+    html.Url.revokeObjectUrl(url);
+  }
+
   @override
   Widget build(BuildContext context) {
+    //TODO: to not reversed and jsut play with the indexes of the list
     List<Talisman>? list = talismanList?.reversed.toList();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Second Screen'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.download),
+            onPressed: downloadFile,
+            tooltip: 'Download the modified savefile',
+          ),
+        ],
       ),
       body: Row(
         children: [
@@ -244,7 +293,7 @@ class _EditBoxState extends State<EditBox> {
                 ),
               ],
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             (widget.selectedTalisman != null)
                 ? <Widget>[
                     CharacterMenu(
@@ -270,176 +319,6 @@ class _EditBoxState extends State<EditBox> {
                 : const Text('Selecte a wyrmprint to edit'),
           ],
         ));
-  }
-}
-
-class CharacterMenu extends StatefulWidget {
-  final void Function(int value) onSelectCharacter;
-  final Talisman? selectedTalisman;
-  static List<Character>? characterList;
-
-  const CharacterMenu(
-      {super.key,
-      required this.onSelectCharacter,
-      required this.selectedTalisman});
-
-  @override
-  State<CharacterMenu> createState() => _CharacterMenuState();
-}
-
-class _CharacterMenuState extends State<CharacterMenu> {
-  List<Character> filteredCharacters = [];
-  String searchTerm = '';
-  Character? selectedCharacter;
-
-  @override
-  void initState() {
-    super.initState();
-    filteredCharacters = CharacterMenu.characterList!;
-    selectedCharacter = CharacterMenu.characterList!.firstWhere(
-        (character) => character.id == widget.selectedTalisman!.talismanId);
-  }
-
-  void filterCharacters(String query) {
-    setState(() {
-      searchTerm = query.toLowerCase();
-      filteredCharacters = CharacterMenu.characterList!.where((character) {
-        return character.title.toLowerCase().contains(searchTerm) ||
-            character.subtitle.toLowerCase().contains(searchTerm);
-      }).toList();
-    });
-  }
-
-  void selectCharacter(Character character) {
-    setState(() {
-      selectedCharacter = character;
-      widget.onSelectCharacter(character.id);
-      searchTerm = ''; // Clear the search term after selecting
-      filteredCharacters =
-          CharacterMenu.characterList!; // Reset the filtered list
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: Column(
-        children: [
-          TextField(
-            decoration: InputDecoration(
-              labelText: selectedCharacter != null
-                  ? 'Selected: ${selectedCharacter!.title}'
-                  : 'Search for character',
-              border: const OutlineInputBorder(),
-            ),
-            onChanged: filterCharacters,
-          ),
-          Expanded(
-            child: ListView.builder(
-              itemCount: filteredCharacters.length,
-              itemBuilder: (context, index) {
-                final character = filteredCharacters[index];
-                return ListTile(
-                  title: Text(character.title),
-                  subtitle: Text(character.subtitle),
-                  onTap: () {
-                    selectCharacter(character); // Select character when tapped
-                  },
-                );
-              },
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class AbilityMenu extends StatefulWidget {
-  final void Function(int index, int value) onSelectAbility;
-  final Talisman? selectedTalisman;
-  final int abilityIndex;
-  static Map<int, Ability>? abilityMap;
-
-  const AbilityMenu(
-      {super.key,
-      required this.selectedTalisman,
-      required this.abilityIndex,
-      required this.onSelectAbility});
-
-  @override
-  State<AbilityMenu> createState() => _AbilityMenuState();
-}
-
-class _AbilityMenuState extends State<AbilityMenu> {
-  List<Ability> filteredAbilities = [];
-  String searchTerm = '';
-  Ability? selectedAbility;
-
-  @override
-  void initState() {
-    super.initState();
-    filteredAbilities = AbilityMenu.abilityMap!.values.toList();
-    selectedAbility =
-        AbilityMenu.abilityMap![widget.selectedTalisman![widget.abilityIndex]];
-  }
-
-  void filterAbilities(String query) {
-    setState(() {
-      searchTerm = query.toLowerCase();
-      filteredAbilities = AbilityMenu.abilityMap!.values.where((ability) {
-        return ability.name.toLowerCase().contains(searchTerm) ||
-            ability.details.toLowerCase().contains(searchTerm) ||
-            ability.belongsTo
-                .any((item) => item.toLowerCase().contains(searchTerm));
-      }).toList();
-    });
-  }
-
-  void selectAbility(Ability ability) {
-    setState(() {
-      selectedAbility = ability;
-      widget.onSelectAbility(widget.abilityIndex, selectedAbility!.id);
-      searchTerm = ''; // Clear the search term after selecting
-      filteredAbilities =
-          AbilityMenu.abilityMap!.values.toList(); // Reset the filtered list
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: Column(
-        children: [
-          TextField(
-            decoration: InputDecoration(
-              labelText: selectedAbility != null
-                  ? 'Selected: ${selectedAbility!.name}'
-                  : 'Search for ability',
-              border: const OutlineInputBorder(),
-            ),
-            onChanged: filterAbilities,
-          ),
-          Expanded(
-            child: ListView.builder(
-              itemCount: filteredAbilities.length,
-              itemBuilder: (context, index) {
-                final ability = filteredAbilities[index];
-                return ListTile(
-                  title: Text(ability.name),
-                  subtitle: Text(
-                    ability.details.replaceAll('\\n', '\n'),
-                  ),
-                  onTap: () {
-                    selectAbility(ability); // Select ability when tapped
-                  },
-                );
-              },
-            ),
-          ),
-        ],
-      ),
-    );
   }
 }
 

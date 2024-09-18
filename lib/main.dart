@@ -5,7 +5,7 @@ import 'file_upload_button.dart';
 //{0:"<No Attunement>",1:"Flame",2:"Water",3:"Wind",4:"Light",5:"Shadow",98:"<Portrait Dependent Elemental>"}
 //{0:"<No Type>",1:"Sword",2:"Blade",3:"Dagger",4:"Axe",5:"Lance",6:"Bow",7:"Wand",8:"Staff",9:"Manacaster", 98: "<Portrait Dependent Weapon>"}
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,6 +20,8 @@ class MyApp extends StatelessWidget {
 }
 
 class FileUploadScreen extends StatefulWidget {
+  const FileUploadScreen({super.key});
+
   @override
   State<FileUploadScreen> createState() => _FileUploadScreenState();
 }
