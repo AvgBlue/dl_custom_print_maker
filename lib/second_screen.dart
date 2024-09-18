@@ -7,8 +7,6 @@ import 'custom_menu.dart';
 import 'dart:html' as html;
 
 //TODO: to add a divaider
-//TODO: to add the ability to add new wrymprint
-//TODO: to add the ability to save the file
 
 class SecondScreen extends StatefulWidget {
   final String fileName;
@@ -94,7 +92,6 @@ class _SecondScreenState extends State<SecondScreen> {
         int newKeyId = maxKeyId + 100;
         Talisman newTalisman = talisman.createCopy(newKeyId);
         maxKeyId = newKeyId;
-        //talismanList!.add(newTalisman);
         // Find the index of the talisman being copied
         int originalIndex = talismanList!.indexOf(talisman);
 
@@ -138,10 +135,6 @@ class _SecondScreenState extends State<SecondScreen> {
         } else {
           maxKeyId = 0;
         }
-
-        // Optional: If you need to persist these changes back to the JSON or a file, handle it here.
-        // For example:
-        // widget.saveFileContent(jsonEncode(jsonData));
       });
     };
   }
@@ -200,8 +193,6 @@ class _SecondScreenState extends State<SecondScreen> {
 
   @override
   Widget build(BuildContext context) {
-    //TODO: to not reversed and jsut play with the indexes of the list
-    List<Talisman>? list = talismanList?.reversed.toList();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Second Screen'),
@@ -219,7 +210,8 @@ class _SecondScreenState extends State<SecondScreen> {
             child: ListView.builder(
               itemCount: talismanList?.length ?? 0,
               itemBuilder: (context, index) {
-                Talisman talisman = list![index];
+                Talisman talisman =
+                    talismanList![talismanList!.length - index - 1];
                 return TalismanContainer(
                   talisman: talisman,
                   onEdit: onEdit(talisman),
@@ -236,6 +228,18 @@ class _SecondScreenState extends State<SecondScreen> {
             onSelectCharacter: onSelectCharacter,
           ))
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () {
+          setState(() {
+            int newKeyId = maxKeyId + 100;
+            Talisman newTalisman =
+                Talisman.createTalisman(newKeyId, 50140101, 0, 0, 0, 0, 0);
+            maxKeyId = newKeyId;
+            talismanList!.add(newTalisman);
+          });
+        },
       ),
     );
   }
