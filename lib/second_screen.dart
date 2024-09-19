@@ -205,30 +205,36 @@ class _SecondScreenState extends State<SecondScreen> {
           ),
         ],
       ),
-      body: Row(
-        children: [
-          Expanded(
-            child: ListView.builder(
-              itemCount: talismanList?.length ?? 0,
-              itemBuilder: (context, index) {
-                Talisman talisman =
-                    talismanList![talismanList!.length - index - 1];
-                return TalismanContainer(
-                  talisman: talisman,
-                  onEdit: onEdit(talisman),
-                  onCopy: onCopy(talisman),
-                  onDelete: onDelete(talisman),
-                );
-              },
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/editscreen.jpg'), fit: BoxFit.cover),
+        ),
+        child: Row(
+          children: [
+            Expanded(
+              child: ListView.builder(
+                itemCount: talismanList?.length ?? 0,
+                itemBuilder: (context, index) {
+                  Talisman talisman =
+                      talismanList![talismanList!.length - index - 1];
+                  return TalismanContainer(
+                    talisman: talisman,
+                    onEdit: onEdit(talisman),
+                    onCopy: onCopy(talisman),
+                    onDelete: onDelete(talisman),
+                  );
+                },
+              ),
             ),
-          ),
-          Expanded(
-              child: EditBox(
-            selectedTalisman: selectedTalisman,
-            onSelectAbility: onSelectAbility,
-            onSelectCharacter: onSelectCharacter,
-          ))
-        ],
+            Expanded(
+                child: EditBox(
+              selectedTalisman: selectedTalisman,
+              onSelectAbility: onSelectAbility,
+              onSelectCharacter: onSelectCharacter,
+            ))
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
@@ -346,31 +352,34 @@ class TalismanContainer extends StatefulWidget {
 class _TalismanContainerState extends State<TalismanContainer> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        //height: 200, // Adjust height as needed
-        width: 400,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            TalismanWidget(talisman: widget.talisman),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.edit),
-                  onPressed: widget.onEdit,
-                ),
-                IconButton(
-                  icon: const Icon(Icons.copy),
-                  onPressed: widget.onCopy,
-                ),
-                IconButton(
-                  icon: const Icon(Icons.delete),
-                  onPressed: widget.onDelete,
-                ),
-              ],
-            )
-          ],
+    return Card(
+        margin: const EdgeInsets.all(8.0),
+        elevation: 4.0,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              TalismanWidget(talisman: widget.talisman),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.edit),
+                    onPressed: widget.onEdit,
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.copy),
+                    onPressed: widget.onCopy,
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.delete),
+                    onPressed: widget.onDelete,
+                  ),
+                ],
+              )
+            ],
+          ),
         ));
   }
 }

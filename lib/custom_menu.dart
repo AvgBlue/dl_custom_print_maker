@@ -174,3 +174,98 @@ class _AbilityMenuState extends State<AbilityMenu> {
     );
   }
 }
+
+class CustomMenu<T> extends StatefulWidget {
+  final void Function(int index, int value) onSelectItem;
+  final Talisman? selectedTalisman;
+  final int abilityIndex;
+  static Map<int, Ability>? abilityMap;
+  final String Function(T item) getItemTitle;
+  final String Function(T item) getItemSubtitle;
+
+  const CustomMenu(
+      {super.key,
+      required this.selectedTalisman,
+      required this.abilityIndex,
+      required this.onSelectItem,
+      required this.getItemTitle,
+      required this.getItemSubtitle});
+
+  @override
+  State<CustomMenu> createState() => _CustomMenuState();
+}
+
+class _CustomMenuState extends State<CustomMenu> {
+  List<Ability> filteredItems = [];
+  String searchTerm = '';
+  Ability? selectedItem;
+
+  @override
+  void initState() {
+    super.initState();
+    filteredItems = AbilityMenu.abilityMap!.values.toList();
+    selectedItem =
+        AbilityMenu.abilityMap![widget.selectedTalisman![widget.abilityIndex]];
+  }
+
+  void filterAbilities(String query) {
+    bool filterFunction(Ability ability) {
+      return ability.name.toLowerCase().contains(searchTerm) ||
+          ability.details.toLowerCase().contains(searchTerm) ||
+          ability.belongsTo
+              .any((item) => item.toLowerCase().contains(searchTerm));
+    }
+
+    setState(() {
+      searchTerm = query.toLowerCase();
+      filteredItems =
+          AbilityMenu.abilityMap!.values.where(filterFunction).toList();
+    });
+  }
+
+  void selectAbility(Ability ability) {
+    setState(() {
+      selectedItem = ability;
+      widget.onSelectItem(widget.abilityIndex, selectedItem!.id);
+      searchTerm = ''; // Clear the search term after selecting
+      filteredItems =
+          AbilityMenu.abilityMap!.values.toList(); // Reset the filtered list
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Column(
+        children: [
+          TextField(
+            decoration: InputDecoration(
+              labelText: selectedItem != null
+                  ? 'Selected: ${selectedItem!.name}'
+                  : 'Search for ability',
+              border: const OutlineInputBorder(),
+            ),
+            onChanged: filterAbilities,
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: filteredItems.length,
+              itemBuilder: (context, index) {
+                final ability = filteredItems[index];
+                return ListTile(
+                  title: Text(ability.name),
+                  subtitle: Text(
+                    ability.details.replaceAll('\\n', '\n'),
+                  ),
+                  onTap: () {
+                    selectAbility(ability); // Select ability when tapped
+                  },
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

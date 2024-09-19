@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'Dragalia Lost Print Maker',
-      //theme: theme,
+      theme: theme,
       home: const FileUploadScreen(),
     );
   }
@@ -83,16 +83,16 @@ class _FileUploadScreenState extends State<FileUploadScreen> {
         title: const Text('Dragalia Lost Print Maker'),
       ),
       body: Container(
-        // decoration: const BoxDecoration(
-        //   image: DecorationImage(
-        //       image: AssetImage('res/mainbackground.jpg'), fit: BoxFit.cover),
-        // ),
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/mainbackground.jpg'),
+              fit: BoxFit.cover),
+        ),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               FileUploadButton(onFileSelected: updateFileName),
-              // Image.asset('assets/mainbackground.jpg'),
             ],
           ),
         ),
