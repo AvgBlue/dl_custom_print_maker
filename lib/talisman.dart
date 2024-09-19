@@ -177,16 +177,14 @@ class TalismanWidget extends StatelessWidget {
       ability3Name = getNameById(talisman!.talismanAbilityId3);
     }
 
-    return Container(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('Character: ${title ?? 'unknown'}'),
-          Text('Ability 1: ${ability1Name ?? 'unknown'}'),
-          Text('Ability 2: ${ability2Name ?? 'unknown'}'),
-          Text('Ability 3: ${ability3Name ?? 'unknown'}'),
-        ],
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('Character: ${title ?? 'unknown'}'),
+        Text('Ability 1: ${ability1Name ?? 'unknown'}'),
+        Text('Ability 2: ${ability2Name ?? 'unknown'}'),
+        Text('Ability 3: ${ability3Name ?? 'unknown'}'),
+      ],
     );
   }
 }

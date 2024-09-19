@@ -37,7 +37,8 @@ class FileUploadButton extends StatelessWidget {
 
   Future<List<dynamic>> loadCharacterData() async {
     // Load the JSON file from the assets
-    final jsonString = await rootBundle.loadString('res/character_data.json');
+    final jsonString =
+        await rootBundle.loadString('character_data.json');
 
     // Parse the JSON string into a List of Maps
     List<dynamic> characterData = jsonDecode(jsonString);
@@ -47,7 +48,7 @@ class FileUploadButton extends StatelessWidget {
   Future<Map<String, dynamic>> loadAbilitiesData() async {
     // Load the JSON file from the assets
     final jsonString =
-        await rootBundle.loadString('res/abilitiesTextDescriptions5.json');
+        await rootBundle.loadString('abilitiesTextDescriptions5.json');
     // Parse the JSON string into a Map
     final Map<String, dynamic> jsonMap = jsonDecode(jsonString);
     return jsonMap;

@@ -195,7 +195,8 @@ class _SecondScreenState extends State<SecondScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Second Screen'),
+        backgroundColor: Color(0xFFE2FDFF),
+        title: const Text('Savefile Edit screen'),
         actions: [
           IconButton(
             icon: const Icon(Icons.download),
@@ -271,58 +272,57 @@ class _EditBoxState extends State<EditBox> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: const Color.fromARGB(255, 134, 121, 120),
         child: Column(
-          children: [
-            TalismanWidget(talisman: widget.selectedTalisman),
-            NavigationBar(
-              selectedIndex: _selectedIndex,
-              onDestinationSelected: _onItemTapped,
-              destinations: const <NavigationDestination>[
-                NavigationDestination(
-                  icon: Icon(Icons.person),
-                  label: 'Character',
-                ),
-                NavigationDestination(
-                  icon: Icon(Icons.looks_one),
-                  label: 'Ability 1',
-                ),
-                NavigationDestination(
-                  icon: Icon(Icons.looks_two),
-                  label: 'Ability 2',
-                ),
-                NavigationDestination(
-                  icon: Icon(Icons.looks_3),
-                  label: 'Ability 3',
-                ),
-              ],
+      children: [
+        TalismanWidget(talisman: widget.selectedTalisman),
+        NavigationBar(
+          selectedIndex: _selectedIndex,
+          onDestinationSelected: _onItemTapped,
+          destinations: const <NavigationDestination>[
+            NavigationDestination(
+              icon: Icon(Icons.person),
+              label: 'Character',
             ),
-            const SizedBox(height: 10),
-            (widget.selectedTalisman != null)
-                ? <Widget>[
-                    CharacterMenu(
-                      onSelectCharacter: widget.onSelectCharacter,
-                      selectedTalisman: widget.selectedTalisman,
-                    ),
-                    AbilityMenu(
-                      onSelectAbility: widget.onSelectAbility,
-                      abilityIndex: 1,
-                      selectedTalisman: widget.selectedTalisman,
-                    ),
-                    AbilityMenu(
-                      onSelectAbility: widget.onSelectAbility,
-                      abilityIndex: 2,
-                      selectedTalisman: widget.selectedTalisman,
-                    ),
-                    AbilityMenu(
-                      onSelectAbility: widget.onSelectAbility,
-                      abilityIndex: 3,
-                      selectedTalisman: widget.selectedTalisman,
-                    ),
-                  ][_selectedIndex]
-                : const Text('Selecte a wyrmprint to edit'),
+            NavigationDestination(
+              icon: Icon(Icons.looks_one),
+              label: 'Ability 1',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.looks_two),
+              label: 'Ability 2',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.looks_3),
+              label: 'Ability 3',
+            ),
           ],
-        ));
+        ),
+        const SizedBox(height: 10),
+        (widget.selectedTalisman != null)
+            ? <Widget>[
+                CharacterMenu(
+                  onSelectCharacter: widget.onSelectCharacter,
+                  selectedTalisman: widget.selectedTalisman,
+                ),
+                AbilityMenu(
+                  onSelectAbility: widget.onSelectAbility,
+                  abilityIndex: 1,
+                  selectedTalisman: widget.selectedTalisman,
+                ),
+                AbilityMenu(
+                  onSelectAbility: widget.onSelectAbility,
+                  abilityIndex: 2,
+                  selectedTalisman: widget.selectedTalisman,
+                ),
+                AbilityMenu(
+                  onSelectAbility: widget.onSelectAbility,
+                  abilityIndex: 3,
+                  selectedTalisman: widget.selectedTalisman,
+                ),
+              ][_selectedIndex]
+            : const Text('Selecte a wyrmprint to edit'),
+      ],
+    ));
   }
 }
 
@@ -349,7 +349,6 @@ class _TalismanContainerState extends State<TalismanContainer> {
     return Container(
         //height: 200, // Adjust height as needed
         width: 400,
-        color: const Color.fromARGB(240, 2, 205, 219),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
