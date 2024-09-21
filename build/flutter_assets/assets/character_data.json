@@ -1,0 +1,1492 @@
+[
+    {
+        "title": "Undercover Grace",
+        "subtitle": "Expiatory Researcher",
+        "talisman_id": "50150106"
+    },
+    {
+        "title": "Chrom",
+        "subtitle": "Prince of Ylisse",
+        "talisman_id": "50150105"
+    },
+    {
+        "title": "Hunter Berserker",
+        "subtitle": "Rathalos Berserker",
+        "talisman_id": "50150104"
+    },
+    {
+        "title": "Lea",
+        "subtitle": "Sublime Swordsman",
+        "talisman_id": "50150103"
+    },
+    {
+        "title": "Marth",
+        "subtitle": "Altean Prince",
+        "talisman_id": "50150102"
+    },
+    {
+        "title": "Naveed",
+        "subtitle": "Suave Lithomancer",
+        "talisman_id": "50150101"
+    },
+    {
+        "title": "Serena",
+        "subtitle": "Purehearted Warrior",
+        "talisman_id": "50140103"
+    },
+    {
+        "title": "Karl",
+        "subtitle": "Hero of Justice",
+        "talisman_id": "50140102"
+    },
+    {
+        "title": "The Prince",
+        "subtitle": "Dragonblood Prince",
+        "talisman_id": "50140101"
+    },
+    {
+        "title": "Valentine's Orion",
+        "subtitle": "Valentine's Guardian",
+        "talisman_id": "50130103"
+    },
+    {
+        "title": "Marty",
+        "subtitle": "Top Ruin Explorer",
+        "talisman_id": "50130102"
+    },
+    {
+        "title": "Armored Yachiyo",
+        "subtitle": "Resplendent Duelist",
+        "talisman_id": "50250104"
+    },
+    {
+        "title": "Nobunaga",
+        "subtitle": "Leader of the Horse Clan",
+        "talisman_id": "50250103"
+    },
+    {
+        "title": "Rena",
+        "subtitle": "Mana Infuser",
+        "talisman_id": "50250102"
+    },
+    {
+        "title": "Mikoto",
+        "subtitle": "Nature's Avatar",
+        "talisman_id": "50250101"
+    },
+    {
+        "title": "Laxi",
+        "subtitle": "Dissonant Android",
+        "talisman_id": "50240101"
+    },
+    {
+        "title": "Aoi",
+        "subtitle": "Impassioned Ninja",
+        "talisman_id": "50230101"
+    },
+    {
+        "title": "Sheila",
+        "subtitle": "Blazing Auspex",
+        "talisman_id": "50350104"
+    },
+    {
+        "title": "Summer Mitsuhide",
+        "subtitle": "Summertime Mouse",
+        "talisman_id": "50350103"
+    },
+    {
+        "title": "Gala Laxi",
+        "subtitle": "Synchronized Android",
+        "talisman_id": "50350102"
+    },
+    {
+        "title": "Ezelith",
+        "subtitle": "Genius of the Century",
+        "talisman_id": "50350101"
+    },
+    {
+        "title": "Yuya",
+        "subtitle": "Rebellious Rider",
+        "talisman_id": "50340102"
+    },
+    {
+        "title": "Melsa",
+        "subtitle": "Resolute Friend",
+        "talisman_id": "50340101"
+    },
+    {
+        "title": "Renelle",
+        "subtitle": "Honorable Treasure Hunter",
+        "talisman_id": "50330101"
+    },
+    {
+        "title": "Gala Gatov",
+        "subtitle": "The Blazewolf",
+        "talisman_id": "50450104"
+    },
+    {
+        "title": "Child Ranzal",
+        "subtitle": "Childlike Mercenary",
+        "talisman_id": "50450103"
+    },
+    {
+        "title": "Halloween Mym",
+        "subtitle": "Dragon Temptress",
+        "talisman_id": "50450102"
+    },
+    {
+        "title": "Ramona",
+        "subtitle": "Impassioned Blacksmith",
+        "talisman_id": "50450101"
+    },
+    {
+        "title": "Yue",
+        "subtitle": "Hungry Hunter",
+        "talisman_id": "50440102"
+    },
+    {
+        "title": "Vanessa",
+        "subtitle": "Red-Haired Warrior",
+        "talisman_id": "50440101"
+    },
+    {
+        "title": "Panther",
+        "subtitle": "Dancing Panther",
+        "talisman_id": "50550104"
+    },
+    {
+        "title": "Kimono Elisanne",
+        "subtitle": "Crimson Paladyn",
+        "talisman_id": "50550103"
+    },
+    {
+        "title": "Nadine",
+        "subtitle": "Selfie Addict",
+        "talisman_id": "50550102"
+    },
+    {
+        "title": "Gala Mym",
+        "subtitle": "Lovestruck Dragon",
+        "talisman_id": "50550101"
+    },
+    {
+        "title": "Emma",
+        "subtitle": "Encouraging Cheerleader",
+        "talisman_id": "50540103"
+    },
+    {
+        "title": "Xuan Zang",
+        "subtitle": "Erudite Sealer",
+        "talisman_id": "50540102"
+    },
+    {
+        "title": "Alain",
+        "subtitle": "Captain Craven",
+        "talisman_id": "50530101"
+    },
+    {
+        "title": "Summer Alex",
+        "subtitle": "Shimmering Guardian",
+        "talisman_id": "50650103"
+    },
+    {
+        "title": "Chelsea",
+        "subtitle": "Obvious Admirer",
+        "talisman_id": "50650102"
+    },
+    {
+        "title": "Gala Sarisse",
+        "subtitle": "The Crimson Star",
+        "talisman_id": "50650101"
+    },
+    {
+        "title": "Valentine's Ezelith",
+        "subtitle": "Stunning Sweetheart",
+        "talisman_id": "50640101"
+    },
+    {
+        "title": "Joe",
+        "subtitle": "Fire's Fletcher",
+        "talisman_id": "50630101"
+    },
+    {
+        "title": "Yukata Cleo",
+        "subtitle": "Festival Belle",
+        "talisman_id": "50750105"
+    },
+    {
+        "title": "Seimei",
+        "subtitle": "Leader of the Ox Clan",
+        "talisman_id": "50750104"
+    },
+    {
+        "title": "Incognito Nefaria",
+        "subtitle": "Yearning Queen",
+        "talisman_id": "50750103"
+    },
+    {
+        "title": "Mega Man",
+        "subtitle": "Kindly Android",
+        "talisman_id": "50750102"
+    },
+    {
+        "title": "Student Maribelle",
+        "subtitle": "Outgoing Student",
+        "talisman_id": "50750101"
+    },
+    {
+        "title": "Sinoa",
+        "subtitle": "Intrepid Scholar",
+        "talisman_id": "50740101"
+    },
+    {
+        "title": "Xania",
+        "subtitle": "Meandering Mage",
+        "talisman_id": "50730101"
+    },
+    {
+        "title": "Ayaha & Otoha",
+        "subtitle": "Twin Wings of Freedom",
+        "talisman_id": "50850104"
+    },
+    {
+        "title": "Kuzunoha",
+        "subtitle": "Outfoxed Fox",
+        "talisman_id": "50850103"
+    },
+    {
+        "title": "Yukata Cassandra",
+        "subtitle": "Summer Sorceress",
+        "talisman_id": "50850102"
+    },
+    {
+        "title": "Valentine's Hildegarde",
+        "subtitle": "Rosy Saint",
+        "talisman_id": "50850101"
+    },
+    {
+        "title": "Halloween Lowen",
+        "subtitle": "Halloween Prankster",
+        "talisman_id": "50840102"
+    },
+    {
+        "title": "Verica",
+        "subtitle": "Guiding Seer",
+        "talisman_id": "50840101"
+    },
+    {
+        "title": "Aurien",
+        "subtitle": "Elegant Gambler",
+        "talisman_id": "50830101"
+    },
+    {
+        "title": "Dragonyule Ilia",
+        "subtitle": "Blessed Alchemist",
+        "talisman_id": "50950103"
+    },
+    {
+        "title": "Faris",
+        "subtitle": "The Wing of Righteousness",
+        "talisman_id": "50950102"
+    },
+    {
+        "title": "Gala Leonidas",
+        "subtitle": "Lord of the New Path",
+        "talisman_id": "50950101"
+    },
+    {
+        "title": "Summer Ieyasu",
+        "subtitle": "Summertime Boar",
+        "talisman_id": "50150204"
+    },
+    {
+        "title": "Eugene",
+        "subtitle": "Sullen Youth",
+        "talisman_id": "50150203"
+    },
+    {
+        "title": "Summer Celliera",
+        "subtitle": "Avid Armsmaster",
+        "talisman_id": "50150202"
+    },
+    {
+        "title": "Xander",
+        "subtitle": "Born Ruler",
+        "talisman_id": "50150201"
+    },
+    {
+        "title": "Halloween Odetta",
+        "subtitle": "Wandering Spider",
+        "talisman_id": "50140201"
+    },
+    {
+        "title": "Zardin",
+        "subtitle": "Hopeless Narcissist",
+        "talisman_id": "50130201"
+    },
+    {
+        "title": "Regina",
+        "subtitle": "Commander of Five Wings",
+        "talisman_id": "50250204"
+    },
+    {
+        "title": "Gala Mascula",
+        "subtitle": "Pure-Hearted Android",
+        "talisman_id": "50250203"
+    },
+    {
+        "title": "Halloween Akasha",
+        "subtitle": "Bloodthirsty One",
+        "talisman_id": "50250202"
+    },
+    {
+        "title": "Valerio",
+        "subtitle": "Dutiful Chef",
+        "talisman_id": "50250201"
+    },
+    {
+        "title": "Summer Ranzal",
+        "subtitle": "Grillmaster",
+        "talisman_id": "50240202"
+    },
+    {
+        "title": "Celliera",
+        "subtitle": "Hot-Blooded Instructor",
+        "talisman_id": "50240201"
+    },
+    {
+        "title": "Jurota",
+        "subtitle": "Solemn Stalwart",
+        "talisman_id": "50230201"
+    },
+    {
+        "title": "Humanoid Mercury",
+        "subtitle": "Teacher from the Tides",
+        "talisman_id": "50350204"
+    },
+    {
+        "title": "Tiki",
+        "subtitle": "Dragon Scion",
+        "talisman_id": "50350203"
+    },
+    {
+        "title": "Mitsuba",
+        "subtitle": "Hinomotoan Chef",
+        "talisman_id": "50350202"
+    },
+    {
+        "title": "Dragonyule Cleo",
+        "subtitle": "Belle Bestower",
+        "talisman_id": "50350201"
+    },
+    {
+        "title": "Renee",
+        "subtitle": "Future Smithing Genius",
+        "talisman_id": "50340203"
+    },
+    {
+        "title": "Orsem",
+        "subtitle": "Dreamer on Ice",
+        "talisman_id": "50340202"
+    },
+    {
+        "title": "Luther",
+        "subtitle": "Passionate Dancer",
+        "talisman_id": "50340201"
+    },
+    {
+        "title": "Finni",
+        "subtitle": "Emotional Android",
+        "talisman_id": "50450204"
+    },
+    {
+        "title": "Lazry",
+        "subtitle": "Mechanized Blacksmith",
+        "talisman_id": "50450203"
+    },
+    {
+        "title": "Gala Elisanne",
+        "subtitle": "Godly Guide",
+        "talisman_id": "50450202"
+    },
+    {
+        "title": "Summer Julietta",
+        "subtitle": "Paladyn in Paradise",
+        "talisman_id": "50450201"
+    },
+    {
+        "title": "Karina",
+        "subtitle": "Free-Spirited Pirate",
+        "talisman_id": "50440201"
+    },
+    {
+        "title": "Pietro",
+        "subtitle": "Visionary Adventurer",
+        "talisman_id": "50430202"
+    },
+    {
+        "title": "Rex",
+        "subtitle": "Charitable Lumberjack",
+        "talisman_id": "50430201"
+    },
+    {
+        "title": "Faeblessed Tobias",
+        "subtitle": "Winged Knight",
+        "talisman_id": "50550205"
+    },
+    {
+        "title": "Catherine",
+        "subtitle": "Perfect Flower",
+        "talisman_id": "50550204"
+    },
+    {
+        "title": "Fjorm",
+        "subtitle": "Princess of Ice",
+        "talisman_id": "50550203"
+    },
+    {
+        "title": "Xainfried",
+        "subtitle": "Dragon Guardian",
+        "talisman_id": "50550201"
+    },
+    {
+        "title": "Gauld",
+        "subtitle": "Bloodfist",
+        "talisman_id": "50540202"
+    },
+    {
+        "title": "Elisanne",
+        "subtitle": "Anointed Lance",
+        "talisman_id": "50540201"
+    },
+    {
+        "title": "Jakob",
+        "subtitle": "Quiet Mercenary",
+        "talisman_id": "50530202"
+    },
+    {
+        "title": "Cibella",
+        "subtitle": "Staunch Avenger",
+        "talisman_id": "50530201"
+    },
+    {
+        "title": "Housekeeper Pia",
+        "subtitle": "Small Singing Helper",
+        "talisman_id": "50650204"
+    },
+    {
+        "title": "Pinon",
+        "subtitle": "The Wing of Purity",
+        "talisman_id": "50650203"
+    },
+    {
+        "title": "Hunter Sarisse",
+        "subtitle": "Mizutsune Archer",
+        "talisman_id": "50650202"
+    },
+    {
+        "title": "Laranoa",
+        "subtitle": "Lighthearted Leader",
+        "talisman_id": "50650201"
+    },
+    {
+        "title": "Dragonyule Nefaria",
+        "subtitle": "Queen of Smiles",
+        "talisman_id": "50640202"
+    },
+    {
+        "title": "Waike",
+        "subtitle": "Noble Thief",
+        "talisman_id": "50630201"
+    },
+    {
+        "title": "Origa",
+        "subtitle": "Aqueous Auspex",
+        "talisman_id": "50750205"
+    },
+    {
+        "title": "Gala Emile",
+        "subtitle": "Artistry's Pinnacle",
+        "talisman_id": "50750204"
+    },
+    {
+        "title": "Forager Cleo",
+        "subtitle": "Belle Forager",
+        "talisman_id": "50750203"
+    },
+    {
+        "title": "Yurius",
+        "subtitle": "Ravenous Researcher",
+        "talisman_id": "50750202"
+    },
+    {
+        "title": "Lily",
+        "subtitle": "Crystalian Princess",
+        "talisman_id": "50750201"
+    },
+    {
+        "title": "Pipple",
+        "subtitle": "Sentient Vegetable",
+        "talisman_id": "50740203"
+    },
+    {
+        "title": "Summer Estelle",
+        "subtitle": "Beachside Preacher",
+        "talisman_id": "50740202"
+    },
+    {
+        "title": "Dragonyule Xander",
+        "subtitle": "King Starfall",
+        "talisman_id": "50740201"
+    },
+    {
+        "title": "Sandalphon",
+        "subtitle": "Angel of Information",
+        "talisman_id": "50850203"
+    },
+    {
+        "title": "Dragonyule Lily",
+        "subtitle": "Princess Starfall",
+        "talisman_id": "50850202"
+    },
+    {
+        "title": "Jiang Ziya",
+        "subtitle": "Quirky Qilin",
+        "talisman_id": "50850201"
+    },
+    {
+        "title": "Nurse Aeleen",
+        "subtitle": "Battle-Tested Nurse",
+        "talisman_id": "50840202"
+    },
+    {
+        "title": "Thaniel",
+        "subtitle": "Shifty Sailor",
+        "talisman_id": "50840201"
+    },
+    {
+        "title": "Ricardt",
+        "subtitle": "Kindly Coward",
+        "talisman_id": "50830201"
+    },
+    {
+        "title": "Sharpshooter Sarisse",
+        "subtitle": "Sylvan Sharpshooter",
+        "talisman_id": "50950203"
+    },
+    {
+        "title": "Yoshitsune",
+        "subtitle": "Leader of the Rooster Clan",
+        "talisman_id": "50950202"
+    },
+    {
+        "title": "Lapis",
+        "subtitle": "The Blue Rose",
+        "talisman_id": "50950201"
+    },
+    {
+        "title": "Bondforged Prince",
+        "subtitle": "Bondforged Scion",
+        "talisman_id": "50150306"
+    },
+    {
+        "title": "Nino",
+        "subtitle": "Inheritor of the Wing",
+        "talisman_id": "50150305"
+    },
+    {
+        "title": "Mona",
+        "subtitle": "Feline Guide",
+        "talisman_id": "50150304"
+    },
+    {
+        "title": "Gala Leif",
+        "subtitle": "White Sparrow",
+        "talisman_id": "50150303"
+    },
+    {
+        "title": "Wedding Elisanne",
+        "subtitle": "Battling Bride",
+        "talisman_id": "50150302"
+    },
+    {
+        "title": "Gala Ranzal",
+        "subtitle": "Seasoned Tactician",
+        "talisman_id": "50150301"
+    },
+    {
+        "title": "Templar Hope",
+        "subtitle": "Budding Templar",
+        "talisman_id": "50140302"
+    },
+    {
+        "title": "Ku Hai",
+        "subtitle": "Rambling Blade",
+        "talisman_id": "50140301"
+    },
+    {
+        "title": "Harle",
+        "subtitle": "The Black Raven",
+        "talisman_id": "50250305"
+    },
+    {
+        "title": "Yukata Lathna",
+        "subtitle": "Midsummer Nightmare",
+        "talisman_id": "50250304"
+    },
+    {
+        "title": "Forager Mitsuba",
+        "subtitle": "Foraging Chef",
+        "talisman_id": "50250303"
+    },
+    {
+        "title": "Tobias",
+        "subtitle": "Faithful Knight",
+        "talisman_id": "50250302"
+    },
+    {
+        "title": "Victor",
+        "subtitle": "Vengeful Commander",
+        "talisman_id": "50250301"
+    },
+    {
+        "title": "Addis",
+        "subtitle": "Noble Warrior",
+        "talisman_id": "50240302"
+    },
+    {
+        "title": "Musashi",
+        "subtitle": "Wandering Samurai",
+        "talisman_id": "50240301"
+    },
+    {
+        "title": "Melody",
+        "subtitle": "Menace of a Maid",
+        "talisman_id": "50230301"
+    },
+    {
+        "title": "Dragonyule Nevin",
+        "subtitle": "The Wintry Wing of Revelation",
+        "talisman_id": "50350304"
+    },
+    {
+        "title": "Gala Notte",
+        "subtitle": "Eternal Partner",
+        "talisman_id": "50350303"
+    },
+    {
+        "title": "Summer Norwin",
+        "subtitle": "Summer Scribe",
+        "talisman_id": "50350302"
+    },
+    {
+        "title": "Wedding Aoi",
+        "subtitle": "Ninja Bride",
+        "talisman_id": "50350301"
+    },
+    {
+        "title": "Su Fang",
+        "subtitle": "Pyroblossom Artisan",
+        "talisman_id": "50340301"
+    },
+    {
+        "title": "Francesca",
+        "subtitle": "Cheerful Merchant",
+        "talisman_id": "50330301"
+    },
+    {
+        "title": "Shingen",
+        "subtitle": "Leader of the Tiger Clan",
+        "talisman_id": "50450305"
+    },
+    {
+        "title": "Kimono Luca",
+        "subtitle": "New Year's Prankster",
+        "talisman_id": "50450304"
+    },
+    {
+        "title": "Summer Amane",
+        "subtitle": "Kitty Cafe's Shining Star",
+        "talisman_id": "50450303"
+    },
+    {
+        "title": "Valentine's Melody",
+        "subtitle": "Lovestruck Maid",
+        "talisman_id": "50450302"
+    },
+    {
+        "title": "Lin You",
+        "subtitle": "Kung-Fu Apprentice",
+        "talisman_id": "50450301"
+    },
+    {
+        "title": "Ranzal",
+        "subtitle": "Arc in the Storm",
+        "talisman_id": "50440301"
+    },
+    {
+        "title": "Johanna",
+        "subtitle": "Untamed Warrioress",
+        "talisman_id": "50430301"
+    },
+    {
+        "title": "Phares",
+        "subtitle": "The Dawning Wind",
+        "talisman_id": "50550306"
+    },
+    {
+        "title": "Izumo",
+        "subtitle": "Emissary of Amaterasu",
+        "talisman_id": "50550305"
+    },
+    {
+        "title": "Grimnir",
+        "subtitle": "The Mad Cyclone",
+        "talisman_id": "50550304"
+    },
+    {
+        "title": "Halloween Melsa",
+        "subtitle": "Spirited Corpse",
+        "talisman_id": "50550303"
+    },
+    {
+        "title": "Kirsty",
+        "subtitle": "Rebellious Commander",
+        "talisman_id": "50550302"
+    },
+    {
+        "title": "Sylas",
+        "subtitle": "Adept Aromatherapist",
+        "talisman_id": "50550301"
+    },
+    {
+        "title": "Pia",
+        "subtitle": "Budding Vocalist",
+        "talisman_id": "50540302"
+    },
+    {
+        "title": "Aeleen",
+        "subtitle": "Mercurial Lancer",
+        "talisman_id": "50540301"
+    },
+    {
+        "title": "Humanoid Midgardsormr",
+        "subtitle": "Hero of Storms",
+        "talisman_id": "50650305"
+    },
+    {
+        "title": "Valentine's Chelsea",
+        "subtitle": "Cloying Clingy Admirer",
+        "talisman_id": "50650304"
+    },
+    {
+        "title": "Meene",
+        "subtitle": "Motherly Faerie",
+        "talisman_id": "50650303"
+    },
+    {
+        "title": "Hawk",
+        "subtitle": "Twilight Hunter",
+        "talisman_id": "50650302"
+    },
+    {
+        "title": "Louise",
+        "subtitle": "Doting Sister",
+        "talisman_id": "50650301"
+    },
+    {
+        "title": "Joachim",
+        "subtitle": "Hidden Hunter",
+        "talisman_id": "50640302"
+    },
+    {
+        "title": "Eleonora",
+        "subtitle": "Curious Archer",
+        "talisman_id": "50640301"
+    },
+    {
+        "title": "Philia",
+        "subtitle": "Love Seeker",
+        "talisman_id": "50630301"
+    },
+    {
+        "title": "Basileus",
+        "subtitle": "The Wing of War",
+        "talisman_id": "50750304"
+    },
+    {
+        "title": "Myriam",
+        "subtitle": "Secret Admirer",
+        "talisman_id": "50750303"
+    },
+    {
+        "title": "Summer Sinoa",
+        "subtitle": "Seaside Scholar",
+        "talisman_id": "50750302"
+    },
+    {
+        "title": "Maribelle",
+        "subtitle": "Child of the Forest",
+        "talisman_id": "50750301"
+    },
+    {
+        "title": "Dragonyule Xainfried",
+        "subtitle": "Saint's Aegis",
+        "talisman_id": "50740302"
+    },
+    {
+        "title": "Noelle",
+        "subtitle": "Meek Messenger",
+        "talisman_id": "50740301"
+    },
+    {
+        "title": "Nicolas",
+        "subtitle": "Walking Encyclopedia",
+        "talisman_id": "50730301"
+    },
+    {
+        "title": "Nina",
+        "subtitle": "Spirited Shopkeeper",
+        "talisman_id": "50850303"
+    },
+    {
+        "title": "Formal Noelle",
+        "subtitle": "Bridge Builder",
+        "talisman_id": "50850302"
+    },
+    {
+        "title": "Akasha",
+        "subtitle": "Pursuer of Knowledge",
+        "talisman_id": "50850301"
+    },
+    {
+        "title": "Wedding Xania",
+        "subtitle": "Magical Bride",
+        "talisman_id": "50840302"
+    },
+    {
+        "title": "Lowen",
+        "subtitle": "Dependable Brother",
+        "talisman_id": "50840301"
+    },
+    {
+        "title": "Sophie",
+        "subtitle": "Mana Observer",
+        "talisman_id": "50830301"
+    },
+    {
+        "title": "Cecile",
+        "subtitle": "Disgraced Knight",
+        "talisman_id": "50950303"
+    },
+    {
+        "title": "Saiga",
+        "subtitle": "Sinful Marksman",
+        "talisman_id": "50950302"
+    },
+    {
+        "title": "Formal Joachim",
+        "subtitle": "Resolved Hunter",
+        "talisman_id": "50950301"
+    },
+    {
+        "title": "Civilian Leif",
+        "subtitle": "Ambitious Knight",
+        "talisman_id": "50150405"
+    },
+    {
+        "title": "Pecorine",
+        "subtitle": "Peckish Princess",
+        "talisman_id": "50150404"
+    },
+    {
+        "title": "Gala Prince",
+        "subtitle": "Bearer of Dragonlight",
+        "talisman_id": "50150403"
+    },
+    {
+        "title": "Alfonse",
+        "subtitle": "Prince of Askr",
+        "talisman_id": "50150402"
+    },
+    {
+        "title": "Albert",
+        "subtitle": "Thunderswift Lord",
+        "talisman_id": "50150401"
+    },
+    {
+        "title": "Odetta",
+        "subtitle": "Wanderlust Incarnate",
+        "talisman_id": "50140401"
+    },
+    {
+        "title": "Raemond",
+        "subtitle": "Loyal Servant",
+        "talisman_id": "50130401"
+    },
+    {
+        "title": "Humanoid Jupiter",
+        "subtitle": "Capricious Luminary",
+        "talisman_id": "50250404"
+    },
+    {
+        "title": "Mordecai",
+        "subtitle": "Innocent Being",
+        "talisman_id": "50250403"
+    },
+    {
+        "title": "Gala Luca",
+        "subtitle": "Harmony Seeker",
+        "talisman_id": "50250402"
+    },
+    {
+        "title": "Beautician Zardin",
+        "subtitle": "Brilliant Beautician",
+        "talisman_id": "50250401"
+    },
+    {
+        "title": "Hanabusa",
+        "subtitle": "Hinomotoan Dancer",
+        "talisman_id": "50240402"
+    },
+    {
+        "title": "Yachiyo",
+        "subtitle": "Peerless Duelist",
+        "talisman_id": "50240401"
+    },
+    {
+        "title": "Halloween Edward",
+        "subtitle": "Bloodsucking Butler",
+        "talisman_id": "50230401"
+    },
+    {
+        "title": "Farren",
+        "subtitle": "Synced Wyrmbinder",
+        "talisman_id": "50350405"
+    },
+    {
+        "title": "Yukata Curran",
+        "subtitle": "Festival Inquisitor",
+        "talisman_id": "50350404"
+    },
+    {
+        "title": "Wu Kong",
+        "subtitle": "Rookie Sealer",
+        "talisman_id": "50350403"
+    },
+    {
+        "title": "Mitsuhide",
+        "subtitle": "Leader of the Mouse Clan",
+        "talisman_id": "50350402"
+    },
+    {
+        "title": "Fleur",
+        "subtitle": "Budding Artist",
+        "talisman_id": "50340402"
+    },
+    {
+        "title": "Fritz",
+        "subtitle": "Dagger Magnificence",
+        "talisman_id": "50340401"
+    },
+    {
+        "title": "Irfan",
+        "subtitle": "Mammonist Mercenary",
+        "talisman_id": "50330401"
+    },
+    {
+        "title": "Valyx",
+        "subtitle": "The Unbending",
+        "talisman_id": "50450406"
+    },
+    {
+        "title": "Gala Audric",
+        "subtitle": "The Paternal King",
+        "talisman_id": "50450405"
+    },
+    {
+        "title": "Sophie (Persona)",
+        "subtitle": "Humanity's Companion",
+        "talisman_id": "50450404"
+    },
+    {
+        "title": "Zhu Bajie",
+        "subtitle": "Indebted General",
+        "talisman_id": "50450403"
+    },
+    {
+        "title": "Dragonyule Malora",
+        "subtitle": "Lady Starfall",
+        "talisman_id": "50450402"
+    },
+    {
+        "title": "Julietta",
+        "subtitle": "Timorous Paladyn",
+        "talisman_id": "50450401"
+    },
+    {
+        "title": "Summer Luca",
+        "subtitle": "Prankster in Paradise",
+        "talisman_id": "50440401"
+    },
+    {
+        "title": "Linus",
+        "subtitle": "Bantam Hero",
+        "talisman_id": "50430401"
+    },
+    {
+        "title": "Ryszarda",
+        "subtitle": "The Wing of Enlightenment",
+        "talisman_id": "50550405"
+    },
+    {
+        "title": "Sharena",
+        "subtitle": "Princess of Askr",
+        "talisman_id": "50550404"
+    },
+    {
+        "title": "Hunter Vanessa",
+        "subtitle": "Kirin Amazon",
+        "talisman_id": "50550403"
+    },
+    {
+        "title": "Halloween Elisanne",
+        "subtitle": "Vampaladyn",
+        "talisman_id": "50550402"
+    },
+    {
+        "title": "Annelie",
+        "subtitle": "The Sugary Star",
+        "talisman_id": "50550401"
+    },
+    {
+        "title": "Sha Wujing",
+        "subtitle": "Deadly Tactician",
+        "talisman_id": "50540402"
+    },
+    {
+        "title": "Ryozen",
+        "subtitle": "Dormant Demon",
+        "talisman_id": "50540401"
+    },
+    {
+        "title": "Malka",
+        "subtitle": "Golden Armorer",
+        "talisman_id": "50530401"
+    },
+    {
+        "title": "Isaac",
+        "subtitle": "Guardsman of the Verdure",
+        "talisman_id": "50650403"
+    },
+    {
+        "title": "Summer Mikoto",
+        "subtitle": "Wave-Riding Archer",
+        "talisman_id": "50650402"
+    },
+    {
+        "title": "Summer Cleo",
+        "subtitle": "Beach Belle",
+        "talisman_id": "50650401"
+    },
+    {
+        "title": "Elias",
+        "subtitle": "Divine Voice",
+        "talisman_id": "50640403"
+    },
+    {
+        "title": "Rawn",
+        "subtitle": "Wild Hunter",
+        "talisman_id": "50640402"
+    },
+    {
+        "title": "Luca",
+        "subtitle": "Woodland Archer",
+        "talisman_id": "50640401"
+    },
+    {
+        "title": "Malora",
+        "subtitle": "Alluring Sniper",
+        "talisman_id": "50630401"
+    },
+    {
+        "title": "Bondforged Zethia",
+        "subtitle": "Radiant Auspex",
+        "talisman_id": "50750405"
+    },
+    {
+        "title": "Summer Chelle",
+        "subtitle": "Unrelenting Summer Beauty",
+        "talisman_id": "50750404"
+    },
+    {
+        "title": "Radiant Xuan Zang",
+        "subtitle": "Radiant Sealer",
+        "talisman_id": "50750403"
+    },
+    {
+        "title": "Peony",
+        "subtitle": "Sweet Dream",
+        "talisman_id": "50750402"
+    },
+    {
+        "title": "Lucretia",
+        "subtitle": "Songstress of the Century",
+        "talisman_id": "50750401"
+    },
+    {
+        "title": "Chitose",
+        "subtitle": "Cuteness Incarnate",
+        "talisman_id": "50740402"
+    },
+    {
+        "title": "Amane",
+        "subtitle": "Child of Miracles",
+        "talisman_id": "50740401"
+    },
+    {
+        "title": "Xiao Lei",
+        "subtitle": "Boundless Arithmetician",
+        "talisman_id": "50730401"
+    },
+    {
+        "title": "Kimono Notte",
+        "subtitle": "Celebrating Cutie",
+        "talisman_id": "50850403"
+    },
+    {
+        "title": "Gala Zena",
+        "subtitle": "Unwavering Auspex",
+        "talisman_id": "50850402"
+    },
+    {
+        "title": "Hildegarde",
+        "subtitle": "Devout Oracle",
+        "talisman_id": "50850401"
+    },
+    {
+        "title": "Felicia",
+        "subtitle": "Captivating Dancer",
+        "talisman_id": "50840403"
+    },
+    {
+        "title": "Vixel",
+        "subtitle": "Musical Maestro",
+        "talisman_id": "50840402"
+    },
+    {
+        "title": "Halloween Althemia",
+        "subtitle": "Diametric Vampire",
+        "talisman_id": "50840401"
+    },
+    {
+        "title": "Estelle",
+        "subtitle": "Loving Preacher",
+        "talisman_id": "50830402"
+    },
+    {
+        "title": "Hope",
+        "subtitle": "Knight at Heart",
+        "talisman_id": "50830401"
+    },
+    {
+        "title": "Halloween Laxi",
+        "subtitle": "Mischievous Android",
+        "talisman_id": "50950403"
+    },
+    {
+        "title": "Eirene",
+        "subtitle": "Rational Android",
+        "talisman_id": "50950402"
+    },
+    {
+        "title": "Ilia",
+        "subtitle": "Flawless Alchemist",
+        "talisman_id": "50950401"
+    },
+    {
+        "title": "Sharpshooter Joe",
+        "subtitle": "Scorching Sharpshooter",
+        "talisman_id": "50930401"
+    },
+    {
+        "title": "Gala Nedrick",
+        "subtitle": "Shadow of Genesis",
+        "talisman_id": "50150504"
+    },
+    {
+        "title": "Alberius",
+        "subtitle": "Dragonblooded Hero",
+        "talisman_id": "50150503"
+    },
+    {
+        "title": "Gala Alex",
+        "subtitle": "Liberated Assassin",
+        "talisman_id": "50150502"
+    },
+    {
+        "title": "Yaten",
+        "subtitle": "Wandering Festival Planner",
+        "talisman_id": "50150501"
+    },
+    {
+        "title": "Audric",
+        "subtitle": "Atoning King",
+        "talisman_id": "50140503"
+    },
+    {
+        "title": "Berserker",
+        "subtitle": "Frenzied Warrior",
+        "talisman_id": "50140501"
+    },
+    {
+        "title": "Rodrigo",
+        "subtitle": "Sincere Giver",
+        "talisman_id": "50130501"
+    },
+    {
+        "title": "Gala Zethia",
+        "subtitle": "Auspex of Genesis",
+        "talisman_id": "50250504"
+    },
+    {
+        "title": "Linnea",
+        "subtitle": "Taciturn Warrior",
+        "talisman_id": "50250503"
+    },
+    {
+        "title": "Natalie",
+        "subtitle": "Devoted Festival Prot\u00e9g\u00e9",
+        "talisman_id": "50250502"
+    },
+    {
+        "title": "Ieyasu",
+        "subtitle": "Leader of the Boar Clan",
+        "talisman_id": "50250501"
+    },
+    {
+        "title": "Aldred",
+        "subtitle": "Wyrmbound Warrior",
+        "talisman_id": "50240503"
+    },
+    {
+        "title": "Durant",
+        "subtitle": "Blood-Covered Mad Dog",
+        "talisman_id": "50240502"
+    },
+    {
+        "title": "Taro",
+        "subtitle": "Greenhorn Samurai",
+        "talisman_id": "50230501"
+    },
+    {
+        "title": "Summer Prince",
+        "subtitle": "Prince of Summer",
+        "talisman_id": "50350506"
+    },
+    {
+        "title": "Joker",
+        "subtitle": "Rebellion Incarnate",
+        "talisman_id": "50350505"
+    },
+    {
+        "title": "Nevin",
+        "subtitle": "The Wing of Revelation",
+        "talisman_id": "50350504"
+    },
+    {
+        "title": "Bellina",
+        "subtitle": "Renegade Spitfire",
+        "talisman_id": "50350503"
+    },
+    {
+        "title": "Delphi",
+        "subtitle": "Tutelary Successor",
+        "talisman_id": "50350502"
+    },
+    {
+        "title": "Alex",
+        "subtitle": "Shadow Assassin",
+        "talisman_id": "50340502"
+    },
+    {
+        "title": "Orion",
+        "subtitle": "Maiden Protector",
+        "talisman_id": "50340501"
+    },
+    {
+        "title": "Vida",
+        "subtitle": "Knife Fanatic",
+        "talisman_id": "50330502"
+    },
+    {
+        "title": "Vice",
+        "subtitle": "Eager Assassin",
+        "talisman_id": "50330501"
+    },
+    {
+        "title": "Dragonyule Victor",
+        "subtitle": "Festive Commander",
+        "talisman_id": "50450503"
+    },
+    {
+        "title": "Summer Patia",
+        "subtitle": "Seaside Sparrow",
+        "talisman_id": "50450502"
+    },
+    {
+        "title": "Curran",
+        "subtitle": "Dogged Inquisitor",
+        "talisman_id": "50450501"
+    },
+    {
+        "title": "Sazanka",
+        "subtitle": "Cultured Flower",
+        "talisman_id": "50440501"
+    },
+    {
+        "title": "Erik",
+        "subtitle": "Feral Noble",
+        "talisman_id": "50430501"
+    },
+    {
+        "title": "Yukimura",
+        "subtitle": "Leader of the Monkey Clan",
+        "talisman_id": "50550504"
+    },
+    {
+        "title": "Summer Leonidas",
+        "subtitle": "Lord of the Summer Sun",
+        "talisman_id": "50550503"
+    },
+    {
+        "title": "Lathna",
+        "subtitle": "Chaos Child",
+        "talisman_id": "50550502"
+    },
+    {
+        "title": "Forte",
+        "subtitle": "Lord of the Skies",
+        "talisman_id": "50550501"
+    },
+    {
+        "title": "Patia",
+        "subtitle": "Spirited Sparrow",
+        "talisman_id": "50540502"
+    },
+    {
+        "title": "Botan",
+        "subtitle": "Naginata Cutie",
+        "talisman_id": "50540501"
+    },
+    {
+        "title": "Zace",
+        "subtitle": "Bone Collector",
+        "talisman_id": "50530501"
+    },
+    {
+        "title": "Halloween Sylas",
+        "subtitle": "Enchanting Aromatherapist",
+        "talisman_id": "50650505"
+    },
+    {
+        "title": "Opera Karina",
+        "subtitle": "Pirate Opera Prima Donna",
+        "talisman_id": "50650504"
+    },
+    {
+        "title": "Chelle",
+        "subtitle": "Unrelenting Beauty",
+        "talisman_id": "50650503"
+    },
+    {
+        "title": "Valentine's Addis",
+        "subtitle": "Devoted Samurai",
+        "talisman_id": "50650502"
+    },
+    {
+        "title": "Nefaria",
+        "subtitle": "Queen of the Sands",
+        "talisman_id": "50650501"
+    },
+    {
+        "title": "Norwin",
+        "subtitle": "Anguished Author",
+        "talisman_id": "50640501"
+    },
+    {
+        "title": "Vania",
+        "subtitle": "Vampire Princess",
+        "talisman_id": "50750505"
+    },
+    {
+        "title": "Zena",
+        "subtitle": "Otherworld Auspex",
+        "talisman_id": "50750504"
+    },
+    {
+        "title": "Cassandra",
+        "subtitle": "Sorrowful Royal Magician",
+        "talisman_id": "50750503"
+    },
+    {
+        "title": "Gala Cleo",
+        "subtitle": "Supreme Sorcerer",
+        "talisman_id": "50750502"
+    },
+    {
+        "title": "Veronica",
+        "subtitle": "Emblian Princess",
+        "talisman_id": "50750501"
+    },
+    {
+        "title": "Kleimann",
+        "subtitle": "Mad Scientist",
+        "talisman_id": "50740501"
+    },
+    {
+        "title": "Althemia",
+        "subtitle": "Timid Researcher",
+        "talisman_id": "50730501"
+    },
+    {
+        "title": "Grace",
+        "subtitle": "Wistful Widow",
+        "talisman_id": "50850503"
+    },
+    {
+        "title": "Summer Verica",
+        "subtitle": "Beach Beauty",
+        "talisman_id": "50850502"
+    },
+    {
+        "title": "Heinwald",
+        "subtitle": "Seeker of Truth",
+        "talisman_id": "50850501"
+    },
+    {
+        "title": "Cleo",
+        "subtitle": "Belle Healer",
+        "talisman_id": "50840501"
+    },
+    {
+        "title": "Edward",
+        "subtitle": "Perfect Butler",
+        "talisman_id": "50830501"
+    },
+    {
+        "title": "Humanoid Zodiark",
+        "subtitle": "Embracing Shadow",
+        "talisman_id": "50950503"
+    },
+    {
+        "title": "Summer Mym",
+        "subtitle": "Midsummer Temptress",
+        "talisman_id": "50950502"
+    },
+    {
+        "title": "Gala Chelle",
+        "subtitle": "Passionate Princess",
+        "talisman_id": "50950501"
+    }
+]
