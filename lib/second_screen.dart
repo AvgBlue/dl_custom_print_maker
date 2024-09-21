@@ -228,11 +228,14 @@ class _SecondScreenState extends State<SecondScreen> {
               ),
             ),
             Expanded(
-                child: EditBox(
-              selectedTalisman: selectedTalisman,
-              onSelectAbility: onSelectAbility,
-              onSelectCharacter: onSelectCharacter,
-            ))
+              child: Card(
+                  color: Theme.of(context).colorScheme.surface.withOpacity(0.7),
+                  child: EditBox(
+                    selectedTalisman: selectedTalisman,
+                    onSelectAbility: onSelectAbility,
+                    onSelectCharacter: onSelectCharacter,
+                  )),
+            )
           ],
         ),
       ),
@@ -282,6 +285,8 @@ class _EditBoxState extends State<EditBox> {
       children: [
         TalismanWidget(talisman: widget.selectedTalisman),
         NavigationBar(
+          backgroundColor:
+              Theme.of(context).colorScheme.surface.withOpacity(0.3),
           selectedIndex: _selectedIndex,
           onDestinationSelected: _onItemTapped,
           destinations: const <NavigationDestination>[
