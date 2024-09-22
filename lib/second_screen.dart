@@ -4,7 +4,9 @@ import 'character.dart';
 import 'dart:convert';
 import 'ability.dart';
 import 'custom_menu.dart';
-import 'dart:html' as html;
+import 'package:flutter/foundation.dart'; // For kIsWeb
+import 'save_file_stub.dart' if (dart.library.html) 'web_save_file.dart' if (dart.library.io) 'native_save_file.dart';
+
 
 //TODO: to add a divaider
 
@@ -152,13 +154,10 @@ class _SecondScreenState extends State<SecondScreen> {
   }
 
   void downloadFile() {
-    // Append "_modified.json" to the filename
     final String newFileName = 'modified_${widget.fileName}';
-
-    // Parse the original fileContent
     Map<String, dynamic> jsonData = jsonDecode(widget.fileContent);
 
-    // Update 'talisman_list' and 'party_list' with the modified data
+    // Update talisman_list and party_list
     if (jsonData.containsKey('data')) {
       if (talismanList != null) {
         jsonData['data']['talisman_list'] =
@@ -169,26 +168,15 @@ class _SecondScreenState extends State<SecondScreen> {
       }
     }
 
-    // Convert the updated jsonData to JSON string with proper formatting
     String newFileContent =
         const JsonEncoder.withIndent('  ').convert(jsonData);
 
-    // Save the file with the new name and content
-    saveFile(newFileName, 'application/json', newFileContent);
-  }
-
-  void saveFile(String fileName, String fileType, String content) {
-    // Create a Blob with the content and specified file type
-    final blob = html.Blob([content], fileType);
-
-    // Create an anchor element and set its href to the Blob URL
-    final url = html.Url.createObjectUrlFromBlob(blob);
-    final anchor = html.AnchorElement(href: url)
-      ..setAttribute("download", fileName)
-      ..click(); // Trigger the download by clicking the anchor element
-
-    // Revoke the URL after the download is initiated
-    html.Url.revokeObjectUrl(url);
+    // Check if running on web or native platform
+    if (kIsWeb) {
+      saveFileWeb(newFileName, 'application/json', newFileContent);
+    } else {
+      saveFileNative(newFileName, newFileContent);
+    }
   }
 
   @override

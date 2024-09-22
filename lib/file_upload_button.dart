@@ -1,4 +1,6 @@
 // file_upload_button.dart
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'dart:convert';
@@ -24,14 +26,23 @@ class FileUploadButton extends StatelessWidget {
     if (result != null) {
       PlatformFile file = result.files.first;
       String fileName = file.name;
-      String fileContent =
-          String.fromCharCodes(file.bytes!); // Get file content
+      String? fileContent;
 
-      onFileSelected(fileName, fileContent, characterData,
-          abilityData); // Pass both file name and content
+      // Check if bytes is not null, else load from the file path
+      if (file.bytes != null) {
+        fileContent = String.fromCharCodes(file.bytes!);
+      } else if (file.path != null) {
+        // Read the file from its path
+        final File localFile = File(file.path!);
+        fileContent = await localFile.readAsString();
+      } else {
+        // Handle the case where neither bytes nor path is available
+        fileContent = 'File content could not be loaded';
+      }
+
+      onFileSelected(fileName, fileContent, characterData, abilityData);
     } else {
-      onFileSelected('No file selected', null, characterData,
-          abilityData); // No file selected
+      onFileSelected('No file selected', null, characterData, abilityData);
     }
   }
 
