@@ -169,12 +169,16 @@ class TalismanWidget extends StatelessWidget {
     String? ability1Name;
     String? ability2Name;
     String? ability3Name;
+    String? hp;
+    String? attack;
 
     if (talisman != null) {
       title = getTitleByTalismanId(talisman!.talismanId);
       ability1Name = getNameById(talisman!.talismanAbilityId1);
       ability2Name = getNameById(talisman!.talismanAbilityId2);
       ability3Name = getNameById(talisman!.talismanAbilityId3);
+      hp = talisman!.additionalHp.toString();
+      attack = talisman!.additionalAttack.toString();
     }
 
     return Column(
@@ -184,6 +188,14 @@ class TalismanWidget extends StatelessWidget {
         Text('Ability 1: ${ability1Name ?? 'unknown'}'),
         Text('Ability 2: ${ability2Name ?? 'unknown'}'),
         Text('Ability 3: ${ability3Name ?? 'unknown'}'),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text('Additional HP : ${hp ?? 'unknown'}'),
+            const SizedBox(width: 20),
+            Text('Additional Strength ${attack ?? 'unknown'}')
+          ],
+        ),
       ],
     );
   }

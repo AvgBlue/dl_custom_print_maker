@@ -5,8 +5,9 @@ import 'dart:convert';
 import 'ability.dart';
 import 'custom_menu.dart';
 import 'package:flutter/foundation.dart'; // For kIsWeb
-import 'save_file_stub.dart' if (dart.library.html) 'web_save_file.dart' if (dart.library.io) 'native_save_file.dart';
-
+import 'save_file_stub.dart'
+    if (dart.library.html) 'web_save_file.dart'
+    if (dart.library.io) 'native_save_file.dart';
 
 //TODO: to add a divaider
 
@@ -153,6 +154,24 @@ class _SecondScreenState extends State<SecondScreen> {
     });
   }
 
+  void onChangeHP(String value) {
+    setState(() {
+      int? attackValue = int.tryParse(value);
+      if (attackValue != null) {
+        selectedTalisman!.additionalHp = attackValue;
+      }
+    });
+  }
+
+  void onChangeAttack(String value) {
+    setState(() {
+      int? attackValue = int.tryParse(value);
+      if (attackValue != null) {
+        selectedTalisman!.additionalAttack = attackValue;
+      }
+    });
+  }
+
   void downloadFile() {
     final String newFileName = 'modified_${widget.fileName}';
     Map<String, dynamic> jsonData = jsonDecode(widget.fileContent);
@@ -222,6 +241,8 @@ class _SecondScreenState extends State<SecondScreen> {
                     selectedTalisman: selectedTalisman,
                     onSelectAbility: onSelectAbility,
                     onSelectCharacter: onSelectCharacter,
+                    onChangeHP: onChangeHP,
+                    onChangeAttack: onChangeAttack,
                   )),
             )
           ],
@@ -247,11 +268,16 @@ class EditBox extends StatefulWidget {
   final Talisman? selectedTalisman;
   final void Function(int index, int value) onSelectAbility;
   final void Function(int value) onSelectCharacter;
+  final void Function(String value) onChangeHP;
+  final void Function(String value) onChangeAttack;
+
   const EditBox(
       {super.key,
       required this.selectedTalisman,
       required this.onSelectAbility,
-      required this.onSelectCharacter});
+      required this.onSelectCharacter,
+      required this.onChangeHP,
+      required this.onChangeAttack});
 
   @override
   State<EditBox> createState() => _EditBoxState();
@@ -259,6 +285,36 @@ class EditBox extends StatefulWidget {
 
 class _EditBoxState extends State<EditBox> {
   int _selectedIndex = 0;
+  late TextEditingController _hpController = TextEditingController();
+  late TextEditingController _attackController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _hpController = TextEditingController(
+        text: widget.selectedTalisman?.additionalHp.toString() ?? '');
+    _attackController = TextEditingController(
+        text: widget.selectedTalisman?.additionalAttack.toString() ?? '');
+  }
+
+  @override
+  @override
+  void didUpdateWidget(EditBox oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.selectedTalisman != oldWidget.selectedTalisman) {
+      _hpController!.text =
+          widget.selectedTalisman?.additionalHp.toString() ?? '';
+      _attackController!.text =
+          widget.selectedTalisman?.additionalAttack.toString() ?? '';
+    }
+  }
+
+  @override
+  void dispose() {
+    _hpController.dispose();
+    _attackController.dispose();
+    super.dispose();
+  }
 
   void _onItemTapped(int index) {
     setState(() {
@@ -272,6 +328,41 @@ class _EditBoxState extends State<EditBox> {
         child: Column(
       children: [
         TalismanWidget(talisman: widget.selectedTalisman),
+        const SizedBox(height: 10),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Expanded(
+              child: TextField(
+                controller: _hpController,
+                decoration: InputDecoration(
+                  labelText:
+                      'HP: ${widget.selectedTalisman?.additionalHp ?? ''}',
+                  border: const OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.number,
+                onChanged: (value) {
+                  widget.onChangeHP(value);
+                },
+              ),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: TextField(
+                controller: _attackController,
+                decoration: InputDecoration(
+                  labelText:
+                      'Strength: ${widget.selectedTalisman?.additionalAttack ?? ''}',
+                  border: const OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.number,
+                onChanged: (value) {
+                  widget.onChangeAttack(value);
+                },
+              ),
+            ),
+          ],
+        ),
         NavigationBar(
           backgroundColor:
               Theme.of(context).colorScheme.surface.withOpacity(0.3),
@@ -319,7 +410,7 @@ class _EditBoxState extends State<EditBox> {
                   selectedTalisman: widget.selectedTalisman,
                 ),
               ][_selectedIndex]
-            : const Text('Selecte a wyrmprint to edit'),
+            : const Text('Select a wyrmprint to edit'),
       ],
     ));
   }
