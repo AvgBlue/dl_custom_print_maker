@@ -172,7 +172,7 @@ class _SecondScreenState extends State<SecondScreen> {
     });
   }
 
-  void downloadFile() {
+  void saveFile() {
     final String newFileName = 'modified_${widget.fileName}';
     Map<String, dynamic> jsonData = jsonDecode(widget.fileContent);
 
@@ -206,9 +206,9 @@ class _SecondScreenState extends State<SecondScreen> {
         title: const Text('Savefile Edit screen'),
         actions: [
           IconButton(
-            icon: const Icon(Icons.download),
-            onPressed: downloadFile,
-            tooltip: 'Download the modified savefile',
+            icon: const Icon(Icons.save),
+            onPressed: saveFile,
+            tooltip: 'save the modified savefile',
           ),
         ],
       ),

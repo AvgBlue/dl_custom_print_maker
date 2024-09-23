@@ -1,24 +1,19 @@
 import 'dart:io';
-import 'package:path_provider/path_provider.dart';
-import 'package:permission_handler/permission_handler.dart';
+import 'package:file_picker/file_picker.dart';
 
 Future<void> saveFileNative(String fileName, String content) async {
-  if (Platform.isAndroid || Platform.isIOS) {
-    // Request storage permissions
-    var status = await Permission.storage.status;
-    if (!status.isGranted) {
-      await Permission.storage.request();
-    }
-  }
+  // Ask the user to select a directory where the file should be saved
+  String? selectedDirectory = await FilePicker.platform.getDirectoryPath();
 
-  // Get the directory to save the file
-  Directory? directory = await getDownloadsDirectory();
-  if (directory != null) {
-    final path = '${directory.path}/$fileName';
+  if (selectedDirectory != null) {
+    // Create the file in the selected directory
+    final path = '$selectedDirectory/$fileName';
     final file = File(path);
     await file.writeAsString(content);
 
     print('File saved at: $path');
+  } else {
+    print('No directory selected.');
   }
 }
 
