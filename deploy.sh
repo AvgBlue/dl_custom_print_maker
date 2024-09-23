@@ -25,6 +25,7 @@ flutter create . --platform web
 
 echo "Building for web..."
 flutter build web --release
+flutter build windows --release &
 
 echo "Deploying to git repository"
 cd build/web
